@@ -1,3 +1,60 @@
+@font-face {
+    font-family: 'gt_walsheimbold_oblique';
+    src: url('fonts/gt-walsheim-bold-oblique-webfont.woff2') format('woff2'),
+         url('fonts/gt-walsheim-bold-oblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gt_walsheimbold';
+    src: url('fonts/gt-walsheim-bold-webfont.woff2') format('woff2'),
+         url('fonts/gt-walsheim-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gt_walsheimlight_oblique';
+    src: url('fonts/gt-walsheim-light-oblique-webfont.woff2') format('woff2'),
+         url('fonts/gt-walsheim-light-oblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gt_walsheimlight';
+    src: url('fonts/gt-walsheim-light-webfont.woff2') format('woff2'),
+         url('fonts/gt-walsheim-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gt_walsheimmedium_oblique';
+    src: url('fonts/gt-walsheim-medium-oblique-webfont.woff2') format('woff2'),
+         url('fonts/gt-walsheim-medium-oblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gt_walsheimmedium';
+    src: url('fonts/gt-walsheim-medium-webfont.woff2') format('woff2'),
+         url('fonts/gt-walsheim-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gt_walsheimregular_oblique';
+    src: url('fonts/gt-walsheim-regular-oblique-webfont.woff2') format('woff2'),
+         url('fonts/gt-walsheim-regular-oblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gt_walsheimregular';
+    src: url('fonts/gt-walsheim-regular-webfont.woff2') format('woff2'),
+         url('fonts/gt-walsheim-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body,
 button,
 input,
@@ -7,6 +64,7 @@ textarea {
 	font-family: $font__main;
 	@include font-size(1);
 	line-height: $font__line-height-body;
+	font-family: 'Roboto', sans-serif;
 }
 
 @import "headings";
