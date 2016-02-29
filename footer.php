@@ -14,11 +14,31 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ghps' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'ghps' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'ghps' ), 'ghps', '<a href="http://underscores.me/" rel="designer">Damon Carr</a>' ); ?>
-		</div><!-- .site-info -->
+		<div class="inner">
+			<div class="footer-nav">
+				<?php dynamic_sidebar( 'footer-nav-1' ); ?>
+			</div>
+			<div class="contact-info">
+				<div class="social-icons">
+					<a href="#"><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/images/facebook-icon.svg">Your browser does not support SVGs</object></a>
+					<a href="#"><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/images/twitter-icon.svg">Your browser does not support SVGs</object></a>
+				</div>
+				<h3>Glen Huntly Primary School</h3>
+				<p>Grange Road,<br />
+				Glen Huntly VIC 3163</p>
+				<p class="tel">03&nbsp;9571&nbsp;2931</p>
+				<p><a href="mailto:info@glenhuntlyps.vic.edu.au">info@glenhuntlyps.vic.edu.au</a></p>
+			</div>
+			<div class="policy-links">
+				<div class="inner">
+					<p>Privacy Policy & use of cookies.</p>
+					<p>Terms and Conditions</p>
+					<div class="site-info">
+						Copyright <?php echo date('Y'); ?> Glenhuntly Primary School. All rights reserved.
+					</div><!-- .site-info -->
+				</div>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

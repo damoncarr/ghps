@@ -5,7 +5,7 @@ $lg-width: 1366px;
 $xlg-width: 1885px;
 
 @mixin bp-small {
-  @media (min-width: #{$sm-width}) and (max-width: #{$md-width - 1px}) {
+  @media (min-width: #{$sm-width}) {
     @content;
   }
 }

@@ -14,3 +14,13 @@
 ## Comments
 --------------------------------------------------------------*/
 @import "primary/comments";
+
+@import "secondary/footer";
+
+.inner {
+	width: 100%;
+	max-width: 1366px;
+	margin: 0 auto;
+
+	@include clearfix();
+}
