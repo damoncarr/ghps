@@ -1,0 +1,29 @@
+$xsm-width: 320px;
+$sm-width: 768px;
+$md-width: 1024px;
+$lg-width: 1366px;
+$xlg-width: 1885px;
+
+@mixin bp-small {
+  @media (min-width: #{$sm-width}) and (max-width: #{$md-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin bp-medium {
+  @media (min-width: #{$md-width}) {
+    @content;
+  }
+}
+
+@mixin bp-large {
+  @media (min-width: #{$lg-width}) {
+    @content;
+  }
+}
+
+@mixin bp-xlarge {
+  @media (min-width: #{$xlg-width}) {
+    @content;
+  }
+}
