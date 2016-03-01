@@ -1,28 +1,28 @@
 .masthead-logo {
-	height: 51px;
+	height: 70px;
 	width: auto;
+	float: left;
+	margin: 16px 20px 0 0;
 }
-
+.site-name {
+	float: left;
+}
 
 .logo-container {
   float: left;
-  padding: 9px 0 0 8px;
-  margin: -2px 0 0 75px;
+  padding: 0;
+  margin: 0 0 0 75px;
 }
   @media (max-width: 1319px) {
     .logo-container {
-      padding: 9px 0 0 31px;
-      margin: 0 40px 0 0; } }
+
+    	}
+    }
   @media (max-width: 1023px) {
     .logo-container {
-      padding: 11px 0 0 24px;
-      margin: 0 50px 0 0; } }
-  @media (max-width: 767px) {
-    .logo-container {
-      margin: -2px 0 0 86px; }
-      .logo-container img {
-        width: 34px;
-        height: 55px; } }
+      
+      }
+    }
   @media (max-width: 479px) {
     .logo-container {
        }
@@ -72,6 +72,9 @@
 .home-link {
 	font-family: 'gt_walsheimmedium';
 	color: $color__red;
+	float: left;
+
+	@include clearfix();
 
 	a {
 		color: $color__red;
@@ -86,3 +89,36 @@
 		display: block;
 	}
 }
+
+#header .nav-area {
+	transition: all 0.25s ease;
+	top: 105px;
+
+	& .btn-opener, & .btn-submit, & .nav-area input[type="search"] {
+		display: block;
+		width: 100%;
+	}
+}
+
+@media (max-width: 1023px) {
+      #header .nav-area .search-holder {
+        display: block; } }
+    @media (max-width: 767px) {
+      #header .nav-area {
+        overflow: hidden;
+        left: -100%;
+        position: fixed;
+        z-index: 1000;
+        // top: 71px;
+        overflow-y: visible !important; }
+        .nav-active #header .nav-area {
+          background: #484f53;
+          overflow-y: auto; } }
+    @media (max-width: 639px) {
+      #header .nav-area {
+        // top: 71px;
+        width: 100%; } }
+    @media (max-width: 479px) {
+      #header .nav-area {
+        // top: 64px;
+        bottom: 0; } }

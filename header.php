@@ -25,7 +25,7 @@
   $menu=wp_nav_menu( array(
 		  'container' => false,
 		  'theme_location' => 'primary',
-		  'items_wrap'     => '<ul data-title="Main Menu">%3$s</ul>',
+		  'items_wrap'     => '<ul data-title="Main Menu" class="main-menu">%3$s</ul>',
 		  'echo'		   => false,
 		  'walker'         => $walker
 		  )
@@ -48,9 +48,11 @@
 					</div>
 					<div class="logo-holder">
 						<div class="logo-container">
-							<a href="<?php echo home_url();?>" class="home-link">
+							<a href="<?php echo home_url();?>" class="home-link home-link-logo">
 								<object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/images/ghps-logo.svg" class="logo-fill masthead-logo">Your browser does not support SVGs</object>
-								<span class="slogan1"><?php _e("Glen Huntly","ghps")?></span><span class="slogan2"><?php _e("Primary School","ghps")?></span>
+							</a>
+							<a href="<?php echo home_url();?>" class="home-link home-link-text">
+								<h2 class="site-name"><span class="slogan1"><?php _e("Glen Huntly","ghps")?></span><span class="slogan2"><?php _e("Primary School","ghps")?></span></h2>
 							</a>
 						</div>
 						<?php if( has_nav_menu( 'top_header' ) )

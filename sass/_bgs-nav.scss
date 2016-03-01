@@ -32,36 +32,7 @@
   @media (max-width: 767px) {
     #header input[type="search"] {
       display: block !important; } }
-  #header .nav-area {
-
-            transition: all 0.25s ease; }
-    #header .nav-area .btn-opener,
-    #header .nav-area .btn-submit,
-    #header .nav-area input[type="search"] {
-      display: block;
-      width: 100%; }
-    @media (max-width: 1023px) {
-      #header .nav-area .search-holder {
-        display: block; } }
-    @media (max-width: 767px) {
-      #header .nav-area {
-        overflow: hidden;
-        left: -100%;
-        position: fixed;
-        z-index: 1000;
-        top: 71px;
-        overflow-y: visible !important; }
-        .nav-active #header .nav-area {
-          background: #484f53;
-          overflow-y: auto; } }
-    @media (max-width: 639px) {
-      #header .nav-area {
-        top: 71px;
-        width: 100%; } }
-    @media (max-width: 479px) {
-      #header .nav-area {
-        top: 64px;
-        bottom: 0; } }
+  
   @media (max-width: 1319px) {
     #header .container, #header .weekly-box, #header .masonry-block, #header .item-block, #header .letest-block, #header .connect-block, #header .text-container, #header .faq-block, #header .content-block, #header .search-section {
       padding: 0;
@@ -410,8 +381,6 @@
   #nav li.hidden {
     display: none !important; }
   #nav > ul {
-    text-transform: uppercase;
-    font-weight: bold;
     white-space: nowrap;
     letter-spacing: -5px;
     position: relative; }
@@ -588,7 +557,7 @@
       text-decoration: none; }
       @media (max-width: 767px) {
         #nav > ul a:hover {
-          background: #026cbf; } }
+          background: $color__darkred; } }
       #nav > ul a.active,
       #nav > ul a.drop-active {
         background: #0060ac;
@@ -668,7 +637,7 @@
       @media (max-width: 767px) {
         #nav > ul ul {
           width: 100%;
-          text-transform: uppercase; } }
+           } }
       @media (max-width: 767px) {
         #nav > ul ul {
           position: absolute;
@@ -1351,3 +1320,8 @@
     color: inherit; }
     .list a:hover, .accordion .slide .text-wrap ul a:hover, .content-block ul a:hover, .search-section ul a:hover, .news-section ul a:hover {
       text-decoration: underline; }
+
+
+ul.main-menu {
+  background: $color__red;
+}
