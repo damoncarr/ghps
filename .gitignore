@@ -43,6 +43,5 @@ Thumbs.db
 
 # Compiled CSS
 css/*
-*.css
 style.css
 style.css.map
