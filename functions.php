@@ -45,7 +45,9 @@ function ghps_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'ghps' ),
-	) );
+	'top_header' => __( 'Top header Navigation', 'ghps' ),
+	'mobile' => __( 'Mobile Navigation', 'ghps' ),
+) );
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -107,6 +109,15 @@ function ghps_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'footer-nav-1', 'ghps' ),
+		'id'            => 'footer-nav-1',
+		'description'   => '',
+		'before_widget' => '<section id="%1$s" class="footer-nav-container %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'ghps_widgets_init' );
 
@@ -116,7 +127,11 @@ add_action( 'widgets_init', 'ghps_widgets_init' );
 function ghps_scripts() {
 	wp_enqueue_style( 'ghps-style', get_stylesheet_uri() );
 
+	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery.min.js', array(), '20120206', true );
+
 	wp_enqueue_script( 'ghps-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+
+	wp_enqueue_script( 'ghps-mobnav', get_template_directory_uri() . '/js/jquery.main.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'ghps-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 

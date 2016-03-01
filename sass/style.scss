@@ -107,6 +107,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 @import "media/media";
 
+
+@import "bgs-style";
+@import "bgs-nav";
+
 .logo {
 	fill: $color__red;
 }

@@ -31,7 +31,7 @@
 			</div>
 			<div class="policy-links">
 				<div class="inner">
-					<p>Privacy Policy & use of cookies.</p>
+					<p>Privacy Policy &amp; use of cookies</p>
 					<p>Terms and Conditions</p>
 					<div class="site-info">
 						Copyright <?php echo date('Y'); ?> Glenhuntly Primary School. All rights reserved.

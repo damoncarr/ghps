@@ -1,0 +1,88 @@
+.masthead-logo {
+	height: 51px;
+	width: auto;
+}
+
+
+.logo-container {
+  float: left;
+  padding: 9px 0 0 8px;
+  margin: -2px 0 0 75px;
+}
+  @media (max-width: 1319px) {
+    .logo-container {
+      padding: 9px 0 0 31px;
+      margin: 0 40px 0 0; } }
+  @media (max-width: 1023px) {
+    .logo-container {
+      padding: 11px 0 0 24px;
+      margin: 0 50px 0 0; } }
+  @media (max-width: 767px) {
+    .logo-container {
+      margin: -2px 0 0 86px; }
+      .logo-container img {
+        width: 34px;
+        height: 55px; } }
+  @media (max-width: 479px) {
+    .logo-container {
+       }
+      .logo-container img {
+        width: 33px;
+        height: 52px;
+        margin: 0 3px 0 0; } }
+  .logo-container a {
+    display: block; }
+  .logo-container img {
+    float: left;
+    margin: 0 13px 0 0; }
+    @media (max-width: 639px) {
+      .logo-container img {
+        margin: 0 8px 0 0; } }
+  .h-page .logo-container {
+    width: 332px;
+    height: 51px;
+    margin: 0 26px 0 21px; }
+    @media (max-width: 1319px) {
+      .h-page .logo-container {
+        width: 372px;
+        margin: 0px 24px 0px 9px; } }
+    @media (max-width: 1023px) {
+      .h-page .logo-container {
+        margin: -2px 26px 13px 2px;
+        width: 369px; } }
+    @media (max-width: 767px) {
+      .h-page .logo-container {
+        width: 360px;
+        height: 55px;
+        padding: 0;
+        margin: 6px 26px 0 85px; } }
+    @media (max-width: 479px) {
+      .h-page .logo-container {
+        height: 35px;
+        margin: 10px 26px 4px 65px;
+        width: 235px; } }
+    .h-page .logo-container img {
+      vertical-align: top; }
+      @media (max-width: 767px) {
+        .h-page .logo-container img {
+          width: auto;
+          height: auto; } }
+
+
+.home-link {
+	font-family: 'gt_walsheimmedium';
+	color: $color__red;
+
+	a {
+		color: $color__red;
+		text-decoration: none;
+
+		&:visited, &:hover {
+			color: $color__red;
+		}
+	}
+
+	span {
+		display: block;
+	}
+}
