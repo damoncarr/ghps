@@ -70,6 +70,11 @@
 			</div>
 			<div class="container nav-area">
 				<div class="inner">
+					<div class="logo-in-nav">
+						<a href="<?php echo home_url();?>" class="home-link home-link-logo">
+							<object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/images/ghps-logo.svg" class="logo-fill masthead-logo-in-nav">Your browser does not support SVGs</object>
+						</a>
+					</div>
 					<div class="wrap-nav">
 						<div class="search-holder hide-desktop">
 							<form method="get" class="search-form" action="<?php echo home_url(); ?>" >

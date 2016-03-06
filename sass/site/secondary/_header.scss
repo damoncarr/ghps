@@ -122,3 +122,10 @@
       #header .nav-area {
         // top: 64px;
         bottom: 0; } }
+
+.top-header {
+
+  @include bp-small {
+    display: none;
+  }
+}

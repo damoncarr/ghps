@@ -7,3 +7,23 @@
 ## Menus
 --------------------------------------------------------------*/
 @import "menus";
+
+.logo-in-nav {
+	display: none;
+	z-index: 9999;
+
+	@include clearfix();
+
+	@include bp-small {
+		display: block;
+		position: absolute;
+	}
+}
+.masthead-logo-in-nav {
+	width: 109px;
+	height: auto;
+
+	.logo {
+		fill: #fff;
+	}
+}

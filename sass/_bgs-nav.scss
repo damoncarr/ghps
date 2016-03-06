@@ -370,13 +370,20 @@
 
 #nav {
   font-size: 21px;
-
-          transition: all 0.25s linear;
+  transition: all 0.25s linear;
   position: relative;
-  z-index: 1000; }
-  @media (max-width: 767px) {
-    #nav {
-      background: #0078d7; } }
+  z-index: 1000;
+  font-family: 'gt_walsheimregular', 'Roboto', sans-serif;
+
+  @include bp-small {
+    font-size: 16px;
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  #nav {
+    background: #0078d7; } }
   #nav li.hidden {
     display: none !important; }
   #nav > ul {
@@ -511,31 +518,9 @@
       #nav > ul > li:first-child.hover > a:before {
 
                 transform: rotate(0deg) translate(-50%, -50%); }
-      #nav > ul > li:first-child > a {
-        position: relative;
-        width: 75px;
-        height: 71px;
-        padding: 0; }
-        @media (max-width: 1319px) {
-          #nav > ul > li:first-child > a {
-            height: 70px; } }
-        .h-page #nav > ul > li:first-child > a {
-          width: auto;
-          padding: 20px 21px 23px 73px; }
-        #nav > ul > li:first-child > a:before {
-          content: "";
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          font-size: 22px;
-          font-family: 'icomoon';
 
-                  transform: rotate(0deg) translate(-50%, -50%); }
-          .h-page #nav > ul > li:first-child > a:before {
-            font-size: 25px;
-            left: 43px;
-            top: 47%; }
-      #nav > ul > li.hover {
+
+#nav > ul > li.hover {
         background: $color__darkred;
         z-index: 10; }
         #nav > ul > li.hover a {
@@ -570,11 +555,15 @@
         top: 50%;
         color: #fff;
         font-size: 14px;
+        transform: rotate(90deg);
+        display: none;
 
-                transform: rotate(90deg); }
         @media (max-width: 1319px) {
-          #nav > ul a.has-drop-down-a:before {
-            right: 20px; } }
+          right: 20px;
+        }
+
+      }
+            
         @media (max-width: 1023px) {
           #nav > ul a.has-drop-down-a:before {
             margin: -8px 0 0;
@@ -729,22 +718,26 @@
       visibility: visible;
 
               transform: translateX(0px); }
+    
     #nav > ul a {
-      padding: 20px 53px 23px 27px;
+      // padding: 20px 53px 23px 27px;
+      padding: 20px 30px 22px 20px;
       display: block;
       color: #fff;
-      position: relative; }
-      .h-page #nav > ul a {
-        padding: 20px 27px 23px 27px; }
-        @media (max-width: 1023px) {
-          .h-page #nav > ul a {
-            padding: 20px 15px 23px; } }
-      @media (max-width: 1319px) {
-        #nav > ul a {
-          padding: 21px 43px 21px; } }
+      position: relative;
+
+      @include bp-small {
+        padding: 21px 14px;
+      }
+    }
+
+    .h-page #nav > ul a {
+      padding: 20px 27px 23px 27px;
+
       @media (max-width: 1023px) {
-        #nav > ul a {
-          padding: 20px 30px 22px 20px; } }
+        padding: 20px 15px 23px;
+      }
+    }
     #nav > ul li,
     #nav > ul .sub-nav {
       display: inline-block;
@@ -1259,10 +1252,53 @@
     #nav ul li.active .drop-slider .drop-slider .prev, #nav ul li.active .drop-slider .drop-slider .next {
       right: 0; } }
 
-@media (max-width: 1023px) {
-  #nav > ul > li:first-child,
-  #nav > ul .sub-nav:first-child {
-    display: none; } }
+#nav > ul > li:first-child,
+#nav > ul .sub-nav:first-child {
+  display: none;
+
+  @include bp-small {
+    display: inline-block;
+  }
+
+  & > a {
+    position: relative;
+    width: 75px;
+    height: 71px;
+    padding: 0;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 18px;
+      font-family: 'icomoon';
+      transform: rotate(0deg) translate(-50%, -50%);
+    }
+
+    @include bp-small {
+      height: 58px;
+    }
+  }
+
+}
+
+.h-page #nav > ul > li:first-child > a {
+  width: auto;
+  padding: 20px 21px 23px 73px;
+}
+
+#nav > ul > li:first-child > a:before {
+  
+}
+.h-page #nav > ul > li:first-child > a:before {
+  font-size: 25px;
+  left: 43px;
+  top: 47%;
+}
+
+
+
 
 .home-page {
   background: #004e9f;
