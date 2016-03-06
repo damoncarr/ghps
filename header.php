@@ -16,6 +16,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <?php wp_head(); ?>
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -68,47 +69,40 @@
 				</div>
 			</div>
 			<div class="container nav-area">
-				<div class="wrap-nav">
-					<div class="search-holder hide-desktop">
-						<form method="get" class="search-form" action="<?php echo home_url(); ?>" >
-							<div class="btn-area">
-								<button type="submit" class="btn-submit"><span class="text-hide"><?php _e("Search","ghps")?></span></button>
-								<a href="#" class="btn-opener"><span class="text-hide"><?php _e("Opener","ghps")?></span></a>
-							</div>
-							<div class="slide"><input type="search" name="s" placeholder="<?php _e("Search","ghps")?>"></div>
-						</form>
+				<div class="inner">
+					<div class="wrap-nav">
+						<div class="search-holder hide-desktop">
+							<form method="get" class="search-form" action="<?php echo home_url(); ?>" >
+								<div class="btn-area">
+									<button type="submit" class="btn-submit"><span class="text-hide"><?php _e("Search","ghps")?></span></button>
+									<a href="#" class="btn-opener"><span class="text-hide"><?php _e("Opener","ghps")?></span></a>
+								</div>
+								<div class="slide"><input type="search" name="s" placeholder="<?php _e("Search","ghps")?>"></div>
+							</form>
+						</div>
+						<?php ?>
+						<?php if( has_nav_menu( 'primary' ) ):?>
+								<nav id="nav">
+								<?php echo $menu;?>
+								</nav>
+						<?php endif;?>
+						<?php ?>
+						<?php if( has_nav_menu( 'mobile' ) )
+								wp_nav_menu( array(
+									'container' => false,
+									'theme_location' => 'mobile',
+									'menu_class'     => 'top-nav hide-desktop',
+									'items_wrap'     => '<ul data-title="Sub menu" class="%2$s">%3$s</ul>',
+									)
+								);
+						?>
 					</div>
-					<?php ?>
-					<?php if( has_nav_menu( 'primary' ) ):?>
-							<nav id="nav">
-							<?php echo $menu;?>
-							</nav>
-					<?php endif;?>
-					<?php ?>
-					<?php if( has_nav_menu( 'mobile' ) )
-							wp_nav_menu( array(
-								'container' => false,
-								'theme_location' => 'mobile',
-								'menu_class'     => 'top-nav hide-desktop',
-								'items_wrap'     => '<ul data-title="Sub menu" class="%2$s">%3$s</ul>',
-								)
-							);
-					?>
 				</div>
 			</div>
 		</header>
 
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ghps' ); ?></a>
-
-	<header id="masthead" class="site-header" role="banner">
-	
-		
-
-		
-	</header><!-- #masthead -->
-
-	
 
 	<div id="content" class="site-content">
 		<div class="inner">
