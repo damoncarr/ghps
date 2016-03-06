@@ -111,27 +111,6 @@ input[type='submit'] {
       margin: 0 0 34px;
       overflow: visible; } }
 
-
-
-.navigation {
-  overflow: hidden;
-  margin: 0 0 1.3em;
-  text-align: center; }
-  .navigation .next {
-    float: left;
-    max-width: 50%; }
-  .navigation .prev {
-    float: right;
-    max-width: 50%;
-    text-align: right; }
-  .navigation .page-numbers {
-    padding: 0 5px; }
-  .navigation .prev,
-  .navigation .next {
-    padding: 0; }
-
-
-
 @media (max-width: 1023px) {
   .news-individual .share-widget {
     margin-left: 0;
