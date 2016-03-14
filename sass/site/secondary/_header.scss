@@ -94,10 +94,25 @@
 	transition: all 0.25s ease;
 	top: 105px;
 
+  @include bp-small {
+    position: relative;
+    width: 100vw;
+    left: calc(-50vw + 50%);
+    background: $color__red;
+    top: 0;
+  }
+
 	& .btn-opener, & .btn-submit, & .nav-area input[type="search"] {
 		display: block;
 		width: 100%;
 	}
+
+  .inner {
+
+    @include bp-small {
+      padding: 0 20px;
+    }
+  }
 }
 
 @media (max-width: 1023px) {
