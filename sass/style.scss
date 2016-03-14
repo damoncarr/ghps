@@ -98,6 +98,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "site/site";
 
 /*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+@import "plugins/wp-tiles";
+
+/*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
 @import "modules/infinite-scroll";
