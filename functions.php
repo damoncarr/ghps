@@ -42,6 +42,23 @@ function ghps_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+
+	set_post_thumbnail_size( 50, 50, true ); // Normal post thumbnails
+	
+	add_image_size( 'post_hero', 1366, 596, true );
+	add_image_size( 'post_hero_half', 683, 298, true );
+	add_image_size( 'post_hero_qtr', 341, 149, true );
+
+	add_image_size( 'post_masthead_pic', 793, 444, true );
+	add_image_size( 'post_masthead_pic_half', 396, 222, true );
+	add_image_size( 'post_masthead_pic_qtr', 198, 111, true );
+
+
+	add_image_size( 'post_tile', 615, 356, true );
+	add_image_size( 'post_tile_half', 307, 128, true );
+	add_image_size( 'post_tile_qtr', 154, 64, true );
+
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'ghps' ),
