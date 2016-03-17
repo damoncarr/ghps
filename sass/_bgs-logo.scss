@@ -1,23 +1,23 @@
 #master-outline {
-  fill: $color__red;
+  fill: #fff;
 }
 #boat {
   fill: $color__red;
 }
 #fins {
-  fill: #fff;
+  fill: $color__red;
 }
 #inner-circle {
   fill: #fff;
 }
 #outer-circle {
-  fill: #fff;
-}
-#houses {
   fill: $color__red;
 }
+#houses {
+  fill: #fff;
+}
 #school-name {
-  fill:#fff;
+  fill: $color__red;
 }
 #school-number {
   fill: $color__red;
@@ -26,32 +26,32 @@
   fill: #fff;
 }
 
-@include bp-small {
-  #master-outline {
-    fill: #fff;
-  }
-  #boat {
-    fill: $color__red;
-  }
-  #fins {
-    fill: $color__red;
-  }
-  #inner-circle {
-    fill: #fff;
-  }
-  #outer-circle {
-    fill: green !important;
-  }
-  #houses {
-    fill: #fff;
-  }
-  #school-name {
-    fill: $color__red;
-  }
-  #school-number {
-    fill: $color__red;
-  }
-  #school-number-text {
-    fill: #fff;
-  }
-}
+// @include bp-small {
+//   #master-outline {
+//     fill: #fff;
+//   }
+//   #boat {
+//     fill: $color__red;
+//   }
+//   #fins {
+//     fill: $color__red;
+//   }
+//   #inner-circle {
+//     fill: #fff;
+//   }
+//   #outer-circle {
+//     fill: green !important;
+//   }
+//   #houses {
+//     fill: #fff;
+//   }
+//   #school-name {
+//     fill: $color__red;
+//   }
+//   #school-number {
+//     fill: $color__red;
+//   }
+//   #school-number-text {
+//     fill: #fff;
+//   }
+// }
