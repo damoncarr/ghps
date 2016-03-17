@@ -1,0 +1,64 @@
+.page-content {
+	article header {
+		background: $color__blue;
+		position: relative;
+    width: 100vw;
+    left: calc(-50vw + 50%);
+    margin-top: 0;
+    padding: 0 20px 10px 20px;
+
+    @include bp-small {
+    	padding-top: 20px;
+    }
+
+    .hero-image-page {
+    	position: relative;
+	    width: 100vw;
+	    right: calc(50vw - 50%);
+	    margin-top: 0;
+
+	    @include bp-small {
+	    	width: 555/1024 * 100%;
+	    	max-width: 790px;
+	    	position: absolute;
+	    	right: 0;
+	    	top: -70px;
+	    }
+    }
+
+	}
+}
+
+
+h1.page-title {
+	color: #fff;
+	margin-bottom: 0;
+
+	@include bp-small {
+		width:40%;
+		margin-top: 90px;
+	}
+}
+
+body.page-template-default {
+
+	& div#content > .inner {
+	padding-top: 0;
+
+		& > #primary {
+			margin-top: 0;
+		}
+	}
+
+	.entry-header > .inner {
+		padding-top: 0;
+		position: relative;
+	}
+
+	.entry-content :first-child {
+		color: $color__red;
+		font-size: 1.2em;
+		line-height: 1.2em;
+	}
+
+}
