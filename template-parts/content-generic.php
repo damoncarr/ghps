@@ -11,18 +11,14 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<div class="inner">
 			<?php the_title( '<h1 class="entry-title page-title">', '</h1>' ); ?>
-
-			<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
-		    <?php if(function_exists('bcn_display'))
-		    {
-		        bcn_display();
-		    }?>
-			</div>
-		</div>
 	</header><!-- .entry-header -->
-	
+	<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+    <?php if(function_exists('bcn_display'))
+    {
+        bcn_display();
+    }?>
+	</div>
 	<div class="entry-content">
 		<?php
 			the_content();

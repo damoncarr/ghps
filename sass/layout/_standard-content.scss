@@ -1,33 +1,11 @@
-.page-template-default {
-
+.page-content {
 	article header {
-		background: $color__cream;
+		background: $color__blue;
 		position: relative;
     width: 100vw;
     left: calc(-50vw + 50%);
     margin-top: 0;
     padding: 0 20px 10px 20px;
-  }
-
-  h1.page-title {
-	color: $color__blue;
-	margin: 0;
-	padding-top: 20px;
-
-	@include bp-small {
-		width:100%;
-		max-width: 1366px;
-		margin: -20px auto 20px;
-		padding-top: 90px;
-	}
-}
-
-  .site-content {
-  	background: #fff;
-  }
-}
-.page-content {
-	
 
     @include bp-small {
     	padding-top: 20px;
@@ -48,32 +26,33 @@
 	    }
     }
 
+	}
 }
 
 
+h1.page-title {
+	color: #fff;
+	margin-bottom: 0;
 
+	@include bp-small {
+		width:40%;
+		margin-top: 90px;
+	}
+}
 
 body.page-template-default {
 
 	& div#content > .inner {
 	padding-top: 0;
-	max-width: 1230px;
 
 		& > #primary {
 			margin-top: 0;
-		}
-
-		h3 {
-			color: $color__red;
-			font-family: 'gt_walsheimlight', 'Roboto', sans-serif;
-			font-size: 1.3rem;
 		}
 	}
 
 	.entry-header > .inner {
 		padding-top: 0;
 		position: relative;
-		max-width: 1230px;
 	}
 
 	.entry-content :first-child {
@@ -81,7 +60,5 @@ body.page-template-default {
 		font-size: 1.2em;
 		line-height: 1.2em;
 	}
-
-
 
 }
