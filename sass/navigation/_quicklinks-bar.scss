@@ -1,0 +1,9 @@
+.quicklinks-bar {
+	display: none;
+	background: $color__blue;
+
+	@include bp-small {
+		display: block;
+	}
+
+}
