@@ -47,10 +47,12 @@
   	font-family: 'gt_walsheimmedium';
   	padding: 8px 15px;
   	text-decoration: none;
+  	transition: all ease 300ms;
 
   	&:hover {
-  		text-decoration: underline;
+  		// text-decoration: underline;
   		color: #fff;
+  		background: lighten($color__blue, 20%);
   	}
   }
 
