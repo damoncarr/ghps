@@ -182,3 +182,50 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+// // Rename '.page-template-template-name-php' to '.page-template-name'.
+
+// function rename_template_body_class( $classes ) {
+//   foreach ( $classes as $k =>  $v ) {
+//     if ( substr($v, 0, 22) == 'page-template-template' ) {
+//       $classes[ $k ] = 'page-' . substr( $v, 14, -4 );
+//     }
+//   }
+//   return $classes;
+// }
+// add_filter( 'body_class', 'rename_template_body_class' );
+
+
+// Add to the body_class function
+function condensed_body_class($classes) {
+    global $post;
+
+    // add a class for the name of the page - later might want to remove the auto generated pageid class which isn't very useful
+    if( is_page()) {
+        $pn = $post->post_name;
+        $classes[] = "page_".$pn;
+    }
+
+    // add a class for the parent page name
+    if ( is_page() && $post->post_parent ) {
+        $post_parent = get_post($post->post_parent);
+        $parentSlug = $post_parent->post_name;
+        $classes[] = "parent_".$parentSlug;
+    }
+
+    // add class for the name of the custom template used (if any)
+    $temp = get_page_template();
+    if ( $temp != null ) {
+        $path = pathinfo($temp);
+        $tmp = $path['filename'] . "." . $path['extension'];
+        $tn= str_replace(".php", "", $tmp);
+        $classes[] = "template_".$tn;
+    }
+
+    return $classes;
+
+}
+
+add_filter('body_class', 'condensed_body_class');
+
