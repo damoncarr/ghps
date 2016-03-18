@@ -6,8 +6,54 @@
   margin-top: 0;
   padding: 0;
 
-  .inner {
-  	padding: 20px;
+  @include clearfix();
+
+  & > .inner {
+  	padding: 20px !important;
+  	max-width: 1230px;
+
+  	div {
+  	@include bp-small {
+  		float: left;
+  		padding-right: 60px;
+  		max-width: 280px;
+  	}
   }
+
+  }
+
+  h3 {
+  	font-family: 'gt_walsheimbold' !important;
+
+  	@include bp-small {
+  		margin-bottom: 0;
+  	}
+  }
+  h4 {
+  	color: $color__red;
+  	font-size: 1.1rem;
+  	font-family: 'gt_walsheimmedium';
+  	margin-bottom: 5px;
+  }
+
+  p {
+  	margin-top: 0;
+  }
+
+  a {
+  	display: inline-block;
+  	background: $color__blue;
+  	color: #fff;
+  	font-family: 'gt_walsheimmedium';
+  	padding: 8px 15px;
+  	text-decoration: none;
+
+  	&:hover {
+  		text-decoration: underline;
+  		color: #fff;
+  	}
+  }
+
+  
 
 }
