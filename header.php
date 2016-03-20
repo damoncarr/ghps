@@ -34,6 +34,17 @@
   $class.=" level".$walker->active_level;
 ?>
 <body <?php body_class(); ?>>
+<div class="quicklinks-bar">
+	<?php if( has_nav_menu( 'top_quicklinks' ) )
+	wp_nav_menu( array(
+		'container' => false,
+		'theme_location' => 'top_quicklinks',
+		'menu_class'     => 'top-quicklinks',
+		'items_wrap'     => '<ul class="%2$s">%3$s</ul>',
+		// 'walker'         => new Custom_Walker_Nav_Menu
+		)
+	); ?>
+</div>
 <header id="header">
 			<a href="#" class="nav-opener"><span></span></a>
 			<div class="top-header">

@@ -62,9 +62,10 @@ function ghps_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'ghps' ),
-	'top_header' => __( 'Top header Navigation', 'ghps' ),
-	'mobile' => __( 'Mobile Navigation', 'ghps' ),
-) );
+		'top_header' => __( 'Top header Navigation', 'ghps' ),
+		'top_quicklinks' => __( 'Top quicklinks Navigation', 'ghps' ),
+		'mobile' => __( 'Mobile Navigation', 'ghps' ),
+	) );
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments

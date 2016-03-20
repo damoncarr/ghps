@@ -25,7 +25,7 @@
       background: #fff;
       z-index: 10000; } }
 
-@media (max-width: 1023px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
   #header.search-active .search-form {
     margin: 0;
     padding: 0; } }
@@ -33,10 +33,6 @@
     #header input[type="search"] {
       display: block !important; } }
   
-  @media (max-width: 1319px) {
-    #header .container, #header .weekly-box, #header .masonry-block, #header .item-block, #header .letest-block, #header .connect-block, #header .text-container, #header .faq-block, #header .content-block, #header .search-section {
-      padding: 0;
-      width: 100%; } }
   #header .search-holder {
     float: right; }
     @media (max-width: 767px) {
@@ -728,6 +724,11 @@
 
       @include bp-small {
         padding: 21px 14px;
+      }
+
+      @include bp-medium {
+        padding: 19px 30px;
+        font-size: 1.15rem;
       }
     }
 
