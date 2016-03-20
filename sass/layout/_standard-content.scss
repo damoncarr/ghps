@@ -1,4 +1,4 @@
-.page-content {
+.template_standard {
 	article header {
 		background: $color__blue;
 		position: relative;
@@ -11,54 +11,70 @@
     	padding-top: 20px;
     }
 
-    .hero-image-page {
+    .hero-image-page-mobile {
     	position: relative;
 	    width: 100vw;
 	    right: calc(50vw - 50%);
 	    margin-top: 0;
 
 	    @include bp-small {
-	    	width: 555/1024 * 100%;
-	    	max-width: 790px;
-	    	position: absolute;
-	    	right: 0;
-	    	top: -70px;
+	    	display: none;
 	    }
+
     }
 
-	}
-}
+    .inner {
+    	padding: 0 0 20px 0;
+    }
 
+    h1.page-title {
+			color: #fff;
+			margin-bottom: 0;
 
-h1.page-title {
-	color: #fff;
-	margin-bottom: 0;
-
-	@include bp-small {
-		width:40%;
-		margin-top: 90px;
-	}
-}
-
-body.page-template-default {
-
-	& div#content > .inner {
-	padding-top: 0;
-
-		& > #primary {
-			margin-top: 0;
+			@include bp-small {
+				width:40%;
+				margin-top: 90px;
+			}
 		}
+
 	}
 
-	.entry-header > .inner {
-		padding-top: 0;
-		position: relative;
+	article .entry-content {
+    .hero-image-page-large {
+    	display: none;
+	    
+	    @include bp-small {
+	    	display: block;
+	    	width: 555/1024 * 100%;
+	    	max-width: 790px;
+	    	position: relative;
+	    	float: right;
+	    	margin: -180px 0 20px 20px;
+	    }
+
+    }
+
+
 	}
 
-	.entry-content :first-child {
+	.entry-content > p:first-child {
 		color: $color__red;
 		font-size: 1.2em;
 		line-height: 1.2em;
 	}
 
+	.site-content {
+
+		.page-content {
+			margin-top: 0;
+
+			@include bp-small {
+				padding-top: 0;
+			}
+		}
+
+		.inner {
+			padding-top: 0;
+		}
+	}
 }
