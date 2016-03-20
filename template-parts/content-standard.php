@@ -12,13 +12,14 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<div class="inner">
-			<div class="hero-image-page">
+		
+			<div class="hero-image-page hero-image-page-mobile">
 				<?php if ( has_post_thumbnail() ) { 
 			    the_post_thumbnail( 'post_masthead_pic' ); 
 				} ?>
 			</div>
-
 			<?php the_title( '<h1 class="entry-title page-title">', '</h1>' ); ?>
+			
 		</div>
 	</header><!-- .entry-header -->
 	<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
@@ -28,6 +29,11 @@
     }?>
 	</div>
 	<div class="entry-content">
+		<div class="hero-image-page-large">
+			<?php if ( has_post_thumbnail() ) { 
+		    the_post_thumbnail( 'post_masthead_pic' ); 
+			} ?>
+		</div>
 		<?php
 			the_content();
 

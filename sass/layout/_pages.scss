@@ -34,21 +34,6 @@
     	padding-top: 20px;
     }
 
-    .hero-image-page {
-    	position: relative;
-	    width: 100vw;
-	    right: calc(50vw - 50%);
-	    margin-top: 0;
-
-	    @include bp-small {
-	    	width: 555/1024 * 100%;
-	    	max-width: 790px;
-	    	position: absolute;
-	    	right: 0;
-	    	top: -70px;
-	    }
-    }
-
 }
 
 
