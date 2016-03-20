@@ -1278,7 +1278,11 @@
     }
 
     @include bp-small {
-      height: 58px;
+      height: 63px;
+    }
+
+    @include bp-medium {
+      height: 62px;
     }
   }
 
