@@ -19,7 +19,8 @@
 					} ?>
 				</div>
 				<div class="site-headline">
-					<?php the_meta(); ?>
+					<h2><?php the_field('homepage_headline'); ?></h2>
+					<h3><?php the_field('homepage_tagline'); ?></h3>
 				</div>
 			</div>
 		</div>
@@ -27,6 +28,36 @@
 	<div class="love-school">
 		<h4>Find out why we love our school</h4>
 		<h5>Secondary Headline</h5>
+		<div class="love-school-tiles">
+			<div class="tile1">
+				<a href="<?php the_field('tile_1_link'); ?>">
+					<?php 
+
+						$image = get_field('tile_1_image');
+						$size = 'homepage_highlight'; 
+						if( $image ) {
+							echo wp_get_attachment_image( $image, $size );
+						}
+						?>
+				</a>
+				<a href="<?php the_field('tile_1_link'); ?>" class="text-link"><?php the_field('tile_1_label'); ?></a>
+			</div>
+			<div class="tile2">
+				<a href="<?php the_field('tile_2_link'); ?>">
+					<?php 
+
+						$image = get_field('tile_2_image');
+						$size = 'homepage_highlight'; 
+						if( $image ) {
+							echo wp_get_attachment_image( $image, $size );
+						}
+						?>
+				</a>
+				<a href="<?php the_field('tile_2_link'); ?>" class="text-link"><?php the_field('tile_2_label'); ?></a>
+			</div>
+
+
+		</div>
 	</div>
 	</div><!-- .front-page-section1 -->
 	<div class="entry-content">

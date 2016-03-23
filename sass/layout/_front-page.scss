@@ -1,3 +1,19 @@
+.template_home {
+	.site-content {
+
+		& > .inner {
+			padding: 0;
+			width: 100%;
+			max-width: 100%;
+		}
+
+		header {
+
+		}
+	}
+}
+
+
 .frontpage-hero {
 	position: relative;
 
@@ -12,86 +28,140 @@
 	background: $color__red;
 	padding: 20px;
 	margin-top: -8px;
+	text-align: center;
 
 	@include bp-small {
 		position: absolute;
 		bottom: 80px;
 		background: rgba($color__blue, .4);
 		padding: 20px 40px;
-	}
-}
-
-.home {
-	.site-content header {
-		padding: 0 7px;
-		background: transparent;
-		z-index: 10;
-
-		@include bp-small {
-			padding: 0px;
-		}
-
-		.inner {
-			padding: 0;
-		}
-
-
+		text-align: left;
 	}
 
-	
-
-	h4 {
-		font-family: $font__script;
+	h2 {
+    font-family: 'gt_walsheimbold';
+    font-size: 2rem;
+    line-height: 2.1rem;
+    margin: 0;
 	}
+
+	h3 {
+		font-family: 'gt_walsheimlight';
+    font-size: 1.5rem;
+    margin: 0;
+	}
+
 }
 .home .site-content .frontpage-header {
 		background: $color__blue;
 	}
-ul.post-meta {
-	background: transparent;
 
-	@include bp-small {
-		
-	}
-
-	span {
-		display: none;
-	}
-
-	& :first-child {
-    font-family: 'gt_walsheimbold';
-    font-size: 2rem;
-    line-height: 2.1rem;
-	}
-
-	& :last-child {
-    font-family: 'gt_walsheimlight';
-    font-size: 1.5rem;
-
-	}
-}
 .love-school {
 	background: $color__blue;
 	color: #fff;
-	margin: -20px -20px 0;
-	padding: 20px;
+	padding: 40px 20px;
 	text-align: center;
 
 	@include bp-small {
-		margin-top: -8px;
-		z-index: 99;
-		position: relative;
-    width: 100vw;
-    left: calc(-50vw + 50%);
-    top: 0;
+		padding: 50px 20px;
 	}
 
 	h4 {
-		font-size: 2rem;
+		font-size: 3rem;
+		line-height: 3.1rem;
+		margin: 0 0 10px 0;
+		font-family: $font__script;
+		letter-spacing: 2px;
+	}
+
+	h5 {
+		font-size: 1.1rem;
+		font-family: 'gt_walsheimlight';
 	}
 }
+
+.love-school-tiles {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+
+	@include clearfix();
+
+	div {
+		width: 100%;
+		position: relative;
+
+		@include bp-small {
+			width: calc(50% - 5px);
+		}
+
+		.text-link {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			z-index: 99;
+			text-decoration: none;
+			font-family: 'gt_walsheimmedium';
+			color: #fff;
+			background: rgba($color__blue, 0.7);
+			height: 4rem;
+			line-height: 4rem; 
+			font-size: 2rem;
+			transition: all ease 300ms;
+		}
+	}
+
+	@include bp-small {
+		& .tile1 {
+			float: left;
+		}
+
+		& .tile2 {
+			float: right;
+		}
+	}
+
+	.tile2 .text-link {
+		background: rgba($color__red, 0.7);
+	}
+
+	.tile1 a.text-link:hover {
+		background: $color__blue;
+	}
+
+	.tile2 a.text-link:hover {
+		background: $color__red;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		z-index: 10;
+	}
+
+}
+
+
 .whats-new {
 	text-align: center;
+	padding-top: 40px;
+
+	h4 {
+		font-size: 3rem;
+		line-height: 3.1rem;
+		margin: 0 0 10px 0;
+		font-family: $font__script;
+		color: $color__red;
+		letter-spacing: 2px;
+	}
+
+	h5 {
+		font-size: 1.1rem;
+		font-family: 'gt_walsheimlight';
+	}
 }
 
 .front-page-section1 {

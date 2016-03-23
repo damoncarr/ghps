@@ -58,6 +58,8 @@ function ghps_setup() {
 	add_image_size( 'post_tile_half', 307, 128, true );
 	add_image_size( 'post_tile_qtr', 154, 64, true );
 
+	add_image_size( 'homepage_highlight', 630, 365, true );	
+
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
