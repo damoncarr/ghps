@@ -1,0 +1,99 @@
+.frontpage-hero {
+	position: relative;
+
+
+}
+
+
+
+.site-headline {
+	position: relative;
+	color: #fff;
+	background: $color__red;
+	padding: 20px;
+	margin-top: -8px;
+
+	@include bp-small {
+		position: absolute;
+		bottom: 80px;
+		background: rgba($color__blue, .4);
+		padding: 20px 40px;
+	}
+}
+
+.home {
+	.site-content header {
+		padding: 0 7px;
+		background: transparent;
+		z-index: 10;
+
+		@include bp-small {
+			padding: 0px;
+		}
+
+		.inner {
+			padding: 0;
+		}
+
+
+	}
+
+	
+
+	h4 {
+		font-family: $font__script;
+	}
+}
+.home .site-content .frontpage-header {
+		background: $color__blue;
+	}
+ul.post-meta {
+	background: transparent;
+
+	@include bp-small {
+		
+	}
+
+	span {
+		display: none;
+	}
+
+	& :first-child {
+    font-family: 'gt_walsheimbold';
+    font-size: 2rem;
+    line-height: 2.1rem;
+	}
+
+	& :last-child {
+    font-family: 'gt_walsheimlight';
+    font-size: 1.5rem;
+
+	}
+}
+.love-school {
+	background: $color__blue;
+	color: #fff;
+	margin: -20px -20px 0;
+	padding: 20px;
+	text-align: center;
+
+	@include bp-small {
+		margin-top: -8px;
+		z-index: 99;
+		position: relative;
+    width: 100vw;
+    left: calc(-50vw + 50%);
+    top: 0;
+	}
+
+	h4 {
+		font-size: 2rem;
+	}
+}
+.whats-new {
+	text-align: center;
+}
+
+.front-page-section1 {
+	background: $color__blue;
+}
