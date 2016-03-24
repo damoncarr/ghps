@@ -373,7 +373,7 @@
 
   @include bp-small {
     font-size: 16px;
-    margin-left: 100px;
+    margin-left: 250px;
   }
 }
 
@@ -726,7 +726,7 @@
         padding: 21px 14px;
       }
 
-      @include bp-medium {
+      @include bp-large {
         padding: 19px 30px;
         font-size: 1.15rem;
       }

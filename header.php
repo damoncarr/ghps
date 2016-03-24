@@ -89,6 +89,9 @@
 						<a href="<?php echo home_url();?>" class="home-link home-link-logo">
 							<object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/images/ghps-logo.svg" class="logo-fill masthead-logo-in-nav">Your browser does not support SVGs</object>
 						</a>
+						<div class="home-link home-link-text home-link-desktop">
+							<h2 class="site-name"><span class="slogan1"><?php _e("Glen Huntly","ghps")?></span><span class="slogan2"><?php _e("Primary School","ghps")?></span></h2>
+						</div>
 					</div>
 					<div class="wrap-nav">
 						<div class="search-holder hide-desktop">

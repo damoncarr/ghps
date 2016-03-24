@@ -151,3 +151,24 @@
     display: none;
   }
 }
+
+.home-link-desktop {
+  display: none;
+  color: #fff;
+
+  @include bp-medium {
+    display: block;
+  }
+
+  h2 {
+    margin: 8px 0 0 0;
+  }
+
+  .slogan1 {
+    font-size: 1.4rem;
+  }
+  .slogan2 {
+    font-size: 1rem;
+    line-height: 0.8rem;
+  }
+}
