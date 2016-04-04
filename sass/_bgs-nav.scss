@@ -373,6 +373,9 @@
 
   @include bp-small {
     font-size: 16px;
+    margin-left: 100px;
+  }
+  @include bp-medium {
     margin-left: 250px;
   }
 }

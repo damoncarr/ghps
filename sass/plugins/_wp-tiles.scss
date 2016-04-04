@@ -3,6 +3,37 @@
 	bottom: 0;
 
 	h4 {
-		font-family: 'gt_walsheimmedium';
+		font-family: 'gt_walsheimbold';
+		font-weight: normal;
 	}
+}
+
+.wp-tiles-tile-with-image .wp-tiles-byline {
+	position: absolute;
+	bottom: 0;
+
+	h4 {
+		font-family: 'gt_walsheimbold';
+		font-weight: normal;
+	}
+}
+
+.wp-tiles-container > div {
+
+	& > div:nth-child(odd) {
+		background: $color__red !important;
+
+		& > div:nth-child(odd) {
+			background: $color__red !important;
+		}
+	}
+
+	& > div:nth-child(even) {
+		background: $color__blue !important;
+
+		& > div:nth-child(even) {
+			background: $color__blue !important;
+		}
+	}
+
 }

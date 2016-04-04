@@ -34,8 +34,10 @@
 		position: absolute;
 		bottom: 80px;
 		background: rgba($color__blue, .4);
-		padding: 20px 40px;
-		text-align: left;
+		padding: 33px 60px 33px 74px;
+    text-align: left;
+    width: 50%;
+    min-width: 680px;
 	}
 
 	h2 {
@@ -43,12 +45,21 @@
     font-size: 2rem;
     line-height: 2.1rem;
     margin: 0;
+
+    @include bp-small {
+    	font-size: 3.5rem;
+    	line-height: 3rem;
+    }
 	}
 
 	h3 {
 		font-family: 'gt_walsheimlight';
     font-size: 1.5rem;
     margin: 0;
+
+   	@include bp-small {
+    	font-size: 2rem;
+    }
 	}
 
 }
@@ -105,12 +116,12 @@
 			margin: auto;
 			z-index: 99;
 			text-decoration: none;
-			font-family: 'gt_walsheimmedium';
+			font-family: 'gt_walsheimbold';
 			color: #fff;
 			background: rgba($color__blue, 0.7);
-			height: 4rem;
-			line-height: 4rem; 
-			font-size: 2rem;
+			height: 5rem;
+			line-height: 5rem; 
+			font-size: 2.75rem;
 			transition: all ease 300ms;
 		}
 	}
