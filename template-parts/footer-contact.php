@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying contatc info footer.
+ * Template part for displaying contact info footer.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *

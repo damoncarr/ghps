@@ -23,6 +23,10 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+	<?php get_template_part( 'template-parts/footer', 'related'); ?>
+
+	<?php get_template_part( 'template-parts/footer', 'contact'); ?>
+
 <?php
 
 get_footer();

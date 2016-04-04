@@ -1,0 +1,34 @@
+.useful-links-container {
+  display: none;
+  float: right;
+  font-family: 'gt_walsheimregular';
+  margin-left: 50px;
+  clear: right;
+
+  @include bp-small {
+    display: block;
+  }
+
+  h3 {
+    background: $color__red;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: grey;
+  }
+  li {
+    padding: 5px;
+    display: block;
+    border: 1px solid grey;
+    border-top: none;
+  }
+
+  ul {
+    margin-top: 0;
+  }
+
+}

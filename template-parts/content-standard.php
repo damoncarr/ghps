@@ -33,7 +33,27 @@
 			<?php if ( has_post_thumbnail() ) { 
 		    the_post_thumbnail( 'post_masthead_pic' ); 
 			} ?>
+
 		</div>
+
+		<?php
+
+			$post_objects = get_field('useful_links');
+
+			if( $post_objects ): ?>
+				<div class="useful-links-container">
+					<h3>Useful Links</h3>
+				    <ul>
+				    <?php foreach( $post_objects as $post_object): ?>
+				        <li>
+				            <a href="<?php echo get_permalink($post_object->ID); ?>"><?php echo get_the_title($post_object->ID); ?></a>
+				        </li>
+				    <?php endforeach; ?>
+				    </ul>
+		    </div>
+			<?php endif; ?>
+
+		
 		<?php
 			the_content();
 
