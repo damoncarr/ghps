@@ -2,7 +2,7 @@
   display: none;
   float: right;
   font-family: 'gt_walsheimregular';
-  margin-left: 50px;
+  margin: 0 0 50px 50px;
   clear: right;
 
   @include bp-small {
@@ -19,9 +19,25 @@
   a {
     text-decoration: none;
     color: grey;
+    padding: 10px;
+    transition: all ease 200ms;
+    display: block;
+
+    &:hover {
+      color: #fff;
+      background: grey;
+    }
+
+    &:after {
+      content: "\e80b";
+      float: right;
+      font-family: 'icomoon';
+      margin-left: 10px;
+      font-size: 0.85rem;
+    }
   }
   li {
-    padding: 5px;
+    
     display: block;
     border: 1px solid grey;
     border-top: none;
