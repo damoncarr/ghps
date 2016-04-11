@@ -7,6 +7,7 @@
   h3 {
     color: $color__red;
     margin-bottom: 10px;
+    font-size: 1.6rem;
   }
   ul {
     margin-left: 2em;
@@ -14,6 +15,8 @@
 
     @include bp-small {
       margin-left: 0;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     @include clearfix();
@@ -25,7 +28,9 @@
     @include bp-small {
       list-style-type: none;
       float: left;
-
+      display: flex;
+      // padding: 0 15px 0 0;
+      width: 25%;
     }
   }
 
@@ -40,12 +45,14 @@
 
     @include bp-small {
       background: #e4e6e7;
-      border-top: 3px solid $color__blue;
+      border-top: 5px solid $color__blue;
       text-align: center;
       padding: 30px;
-      margin-right: 5px;
+      margin: 0 15px 15px 0;
       font-family: 'gt_walsheimbold';
       display: inline-block;
+      width: calc(100% * (1/4) - 10px - 1px);
+      flex-grow: 1;
 
       &:hover {
         background: $color__blue;
