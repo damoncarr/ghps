@@ -22,12 +22,7 @@
 			
 		</div>
 	</header><!-- .entry-header -->
-	<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
-    <?php if(function_exists('bcn_display'))
-    {
-        bcn_display();
-    }?>
-	</div>
+	<?php get_template_part( 'template-parts/content', 'breadcrumbs' ); ?>
 	<div class="entry-content">
 		<div class="hero-image-page-large">
 			<?php if ( has_post_thumbnail() ) { 

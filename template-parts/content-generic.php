@@ -13,12 +13,7 @@
 	<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title page-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
-	<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
-    <?php if(function_exists('bcn_display'))
-    {
-        bcn_display();
-    }?>
-	</div>
+	<?php get_template_part( 'template-parts/content', 'breadcrumbs' ); ?>
 	<div class="entry-content">
 		<?php
 			the_content();

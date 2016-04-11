@@ -14,12 +14,7 @@
 		<div class="inner">
 			<?php the_title( '<h1 class="entry-title page-title">', '</h1>' ); ?>
 
-			<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
-		    <?php if(function_exists('bcn_display'))
-		    {
-		        bcn_display();
-		    }?>
-			</div>
+			<?php get_template_part( 'template-parts/content', 'breadcrumbs' ); ?>
 		</div>
 	</header><!-- .entry-header -->
 	
