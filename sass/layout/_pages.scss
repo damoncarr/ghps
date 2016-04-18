@@ -63,10 +63,18 @@ body.page-template-default {
 		max-width: 1230px;
 	}
 
-	.entry-content :first-child {
+	.intro-para {
 		color: $color__red;
 		font-size: 1.2em;
 		line-height: 1.2em;
+	}
+
+	ul {
+		margin-left: 2rem;
+
+		li {
+			list-style-type: disc;
+		}
 	}
 
 

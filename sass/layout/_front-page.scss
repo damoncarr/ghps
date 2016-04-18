@@ -82,13 +82,15 @@
 		line-height: 3.1rem;
 		margin: 0 0 10px 0;
 		font-family: $font__script;
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 		font-weight: normal;
 	}
 
 	h5 {
-		font-size: 1.1rem;
+		font-size: 1.6rem;
 		font-family: 'gt_walsheimlight';
+		margin: 5px 0 30px;
+		color: #e4e6e7;
 	}
 }
 
@@ -119,8 +121,8 @@
 			font-family: 'gt_walsheimbold';
 			color: #fff;
 			background: rgba($color__blue, 0.7);
-			height: 5rem;
-			line-height: 5rem; 
+			height: 5.5rem;
+			line-height: 5.5rem; 
 			font-size: 2.75rem;
 			transition: all ease 300ms;
 		}
@@ -167,13 +169,14 @@
 		margin: 0 0 10px 0;
 		font-family: $font__script;
 		color: $color__red;
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 		font-weight: normal;
 	}
 
 	h5 {
-		font-size: 1.1rem;
+		font-size: 1.6rem;
 		font-family: 'gt_walsheimlight';
+		margin: 5px 0 30px;
 	}
 }
 
