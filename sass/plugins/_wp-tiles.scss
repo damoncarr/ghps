@@ -1,8 +1,8 @@
-.wp-tiles-tile-text-only {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+// .wp-tiles-tile-text-only {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// }
 .wp-tiles-tile-text-only .wp-tiles-byline {
 	// position: absolute;
 	// bottom: 0;
@@ -38,40 +38,21 @@
 	align-items: center;
 	justify-content: center;
 
-}
-// .wp-tiles-container > div {
-
-// 	& > div:nth-child(odd) {
-// 		background: $color__red !important;
-
-// 		& > div:nth-child(odd) {
-// 			background: $color__red !important;
-// 		}
-// 	}
-
-// 	& > div:nth-child(even) {
-// 		background: $color__blue !important;
-
-// 		& > div:nth-child(even) {
-// 			background: $color__blue !important;
-// 		}
-// 	}
-
-// }
-.wp-tiles-grid .wp-tiles-loaded {
-	& > div:first-child {
-		color: pink;
+	&:hover {
+		background-color: rgba(0,0,0,0.3);
 	}
 
 }
 
-
 .wp-tiles-loaded {
+
+	& > div .wp-tiles-tile-with-image .wp-tiles-byline {
+		transition: all ease 200ms;
+	}
 
 	& > div:first-child {
 
 		.wp-tiles-tile-with-image .wp-tiles-byline {
-			background-color: $color__red !important;
 
 			@include bp-small {
 				right: auto;
@@ -89,14 +70,27 @@
 	}
 
 	& > div:nth-child(odd) {
+
 		.wp-tiles-tile-with-image .wp-tiles-byline {
 			background-color: $color__red !important;
+		}
+
+		&:hover {
+			.wp-tiles-tile-with-image .wp-tiles-byline {
+				background-color: darken($color__red,10%) !important;
+			}
 		}
 	}
 
 	& > div:nth-child(even) {
 		.wp-tiles-tile-with-image .wp-tiles-byline {
 			background-color: $color__blue !important;
+		}
+
+		&:hover {
+			.wp-tiles-tile-with-image .wp-tiles-byline {
+				background-color: darken($color__blue,10%) !important;
+			}
 		}
 	}
 
