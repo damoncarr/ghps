@@ -1,0 +1,53 @@
+.single-post {
+	background: $color__cream;
+	position: relative;
+  width: 100vw;
+  left: calc(-50vw + 50%);
+  margin-top: 0;
+  padding: 0;
+
+  @include clearfix();
+
+  .content-area {
+    background: #fff;
+  }
+  .site-content .inner {
+    width: 100%;
+
+    @include bp-large {
+    	padding: 0 26px 20px 26px !important;
+    	max-width: 1366px;
+    }
+  }
+
+  .post-content {
+    padding: 40px;
+
+    .entry-title {
+      color: $color__blue;
+      margin-top: 0;
+    }
+  }
+
+  .entry-content {
+    padding: 0;
+  }
+
+  footer.site-footer .inner {
+    background: $color__blue;
+  }
+
+  footer.site-footer .inner .policy-links .inner {
+    background: $color__red;
+  }
+
+  .contact-footer {
+    background: transparent;
+    width: auto;
+    left: auto;
+
+    .inner {
+      padding: 40px !important;
+    }
+  }
+}
