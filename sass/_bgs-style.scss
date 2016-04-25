@@ -105,10 +105,12 @@ input[type='submit'] {
   @media (max-width: 1023px) {
     #content {
       padding: 0;
-      margin: 0 0 40px; } }
+      // margin: 0 0 40px;
+    }
+  }
   @media (max-width: 767px) {
     #content {
-      margin: 0 0 34px;
+      // margin: 0 0 34px;
       overflow: visible; } }
 
 @media (max-width: 1023px) {
