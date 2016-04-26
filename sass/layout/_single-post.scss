@@ -10,6 +10,9 @@
 
   .content-area {
     background: #fff;
+    
+    @include clearfix();
+
   }
   .site-content .inner {
     width: 100%;
@@ -21,11 +24,16 @@
   }
 
   .post-content {
-    padding: 40px;
+    padding: 40px 40px 10px 40px;
 
+    @include bp-small {
+      width: 862 / 1366 * 100%;
+      float: left;
+    }
     .entry-title {
       color: $color__blue;
       margin-top: 0;
+      // padding: 40px;
     }
   }
 
@@ -49,5 +57,27 @@
     .inner {
       padding: 40px !important;
     }
+  }
+  .posted-on {
+    text-transform: uppercase;
+    color: $color__text-input;
+    font-size: 0.75rem;
+  }
+}
+.single-post .sidebar {
+  width: 100%;
+  padding: 0 40px;
+
+  @include bp-small {
+    width: 426 / 1366 * 100%;
+    float: right;
+    margin: 110px 40px 0 0;
+    padding: 0;
+  }
+
+  h3 {
+    font-family: $font__script;
+    color: $color__red;
+    font-size: 2.5rem;
   }
 }

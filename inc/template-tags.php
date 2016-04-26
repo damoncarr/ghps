@@ -25,8 +25,7 @@ function ghps_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'ghps' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+		esc_html_x( 'Posted on %s', 'post date', 'ghps' ), $time_string
 	);
 
 	$byline = sprintf(

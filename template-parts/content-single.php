@@ -46,5 +46,10 @@
 				) );
 			?>
 		</div><!-- .entry-content -->
-	</div><!-- /entry-content -->
+		
+	</div><!-- /post-content -->
+	<div class="sidebar">
+			<h3>Share</h3>
+			<h3>Latest News</h3>
+		</div>
 </article><!-- #post-## -->
