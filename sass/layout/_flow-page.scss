@@ -1,0 +1,47 @@
+.template_flow {
+	.site-content {
+
+		& > .inner {
+			padding: 0;
+			width: 100%;
+			max-width: 100%;
+		}
+
+		header.flow-header {
+			background: $color__blue;
+		}
+	}
+
+	.page-title {
+		color: #fff;
+	}
+
+	.entry-header {
+		
+	}
+
+	.entry-content {
+		padding-bottom: 40px;
+
+		.inner {
+			padding: 0 20px;
+
+			@include bp-small {
+				padding: 20px;
+			}
+		}
+	}
+}
+.flow-tiles-container .inner {
+	display: flex;
+}
+.flow-tile {
+	flex-wrap: wrap;
+	width: 100%;
+
+	@include bp-small {
+		margin: 10px 0 0 2%;
+		flex-grow: 1;
+		width: calc(100% * (1/2) - 1px);
+	}
+}
