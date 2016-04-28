@@ -128,4 +128,3 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ghps' ); ?></a>
 
 	<div id="content" class="site-content">
-		<div class="inner">
