@@ -1,16 +1,16 @@
 .contact-footer {
 	background: $color__cream;
 	position: relative;
-  width: 100vw;
-  left: calc(-50vw + 50%);
+  // width: 100vw;
+  // left: calc(-50vw + 50%);
   margin-top: 0;
-  padding: 0;
+  padding: 0 0 40px 0;
 
   @include clearfix();
 
   & > .inner {
-  	padding: 20px 26px !important;
-  	max-width: 1366px;
+  	// padding: 20px 26px !important;
+  	// max-width: 1366px;
 
   	div {
   	@include bp-small {

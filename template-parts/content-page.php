@@ -19,14 +19,16 @@
 	</header><!-- .entry-header -->
 	
 	<div class="entry-content">
-		<?php
-			the_content();
+		<div class="inner">
+			<?php
+				the_content();
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ghps' ),
-				'after'  => '</div>',
-			) );
-		?>
+				wp_link_pages( array(
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ghps' ),
+					'after'  => '</div>',
+				) );
+			?>
+		</div>
 	</div><!-- .entry-content -->
 
 </article><!-- #post-## -->

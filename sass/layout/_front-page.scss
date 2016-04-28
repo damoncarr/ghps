@@ -11,6 +11,18 @@
 
 		}
 	}
+
+	.entry-content {
+		padding-bottom: 40px;
+
+		.inner {
+			padding: 0 20px;
+
+			@include bp-small {
+				padding: 20px;
+			}
+		}
+	}
 }
 
 
@@ -65,6 +77,10 @@
 }
 .home .site-content .frontpage-header {
 		background: $color__blue;
+
+		.inner {
+			padding: 0;
+		}
 	}
 
 .love-school {
@@ -75,6 +91,14 @@
 
 	@include bp-small {
 		padding: 50px 20px;
+	}
+
+	.inner {
+		padding: 0;
+
+		@include bp-small {
+			padding: 20px;
+		}
 	}
 
 	h4 {

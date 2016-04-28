@@ -2,6 +2,10 @@
 	display: none;
 	background: $color__blue;
 
+  .inner {
+    padding: 0;
+  }
+
 	@include clearfix();
 
 	@include bp-small {

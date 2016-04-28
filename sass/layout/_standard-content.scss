@@ -2,10 +2,10 @@
 	article header {
 		background: $color__blue;
 		position: relative;
-    width: 100vw;
-    left: calc(-50vw + 50%);
+    // width: 100vw;
+    // left: calc(-50vw + 50%);
     margin-top: 0;
-    padding: 0 20px 10px 26px;
+    // padding: 0 20px 10px 26px;
 
     @include bp-small {
     	padding-top: 20px;
@@ -23,9 +23,9 @@
 
     }
 
-    .inner {
-    	padding: 0 0 20px 0;
-    }
+    // .inner {
+    // 	padding: 0 0 20px 0;
+    // }
 
     h1.page-title {
 			color: #fff;

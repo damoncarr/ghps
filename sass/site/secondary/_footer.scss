@@ -8,6 +8,15 @@ footer {
 		color: $color__text-on-blue;
 	}
 }
+footer.site-footer {
+	.inner {
+		padding: 0;
+
+		@include bp-small {
+			// padding: 20px;
+		}
+	}
+}
 .contact-info {
 	float: none;
 	color: #fff;

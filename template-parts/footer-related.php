@@ -10,7 +10,6 @@
 ?>
 
 <div class="related-footer">
-		<div class="inner">
 			
 <?php
 
@@ -29,6 +28,4 @@ if( $post_objects ): ?>
 
 ?>
 
-
-		</div>
 </div>
