@@ -20,7 +20,7 @@ get_header(); ?>
 		<!-- </div> -->
 	</div><!-- #primary -->
 
-	<?php get_template_part( 'template-parts/footer', 'related'); ?>
+	<?php get_template_part( 'template-parts/footer', 'contact'); ?>
 	
 <?php
 
