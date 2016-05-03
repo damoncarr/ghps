@@ -250,13 +250,15 @@
   font-size: 16px;
   max-width: 695px;
   float: left;
-
-          transition: 0.25s all linear; }
-  @media (min-width: 1320px) {
-    .top-nav {
+  transition: 0.25s all linear;
+  
+    @media (min-width: 1320px) {
       letter-spacing: -4px;
       text-align: right;
-      width: 48.1%; } }
+      width: 48.1%;
+    }
+  }
+
   @media (max-width: 767px) {
     .top-nav.hide-desktop {
       display: block !important; } }
@@ -676,9 +678,9 @@
             #nav > ul ul .has-drop-down ul {
               bottom: 0; } }
           #nav > ul ul .has-drop-down ul li a {
-            background: #0078d7; }
-          #nav > ul ul .has-drop-down ul li:hover a {
             background: lighten($color__darkred, 10%); }
+          #nav > ul ul .has-drop-down ul li:hover a {
+            background: $color__darkred; }
         #nav > ul ul .has-drop-down > a {
           position: relative; }
           #nav > ul ul .has-drop-down > a:before {
@@ -804,7 +806,7 @@
         display: block; } }
   @media (min-width: 768px) {
     #nav > ul > li > ul > li ul {
-      background: #0078d7 !important; } }
+      background: lighten($color__darkred, 10%) !important; } }
   #nav > ul > li > ul > li.hover > ul {
     display: block; }
   @media (max-width: 767px) {
