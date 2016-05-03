@@ -125,7 +125,8 @@ footer.site-footer {
 	
 	h2 {
 		color: #fff;
-		margin: 0;
+		margin: 0 0 15px 0;
+		line-height: 1.5rem;
 	}
 
 	ul {
@@ -138,12 +139,13 @@ footer.site-footer {
 		margin: 10px 0;
 
 		@include bp-small {
-			margin: 0;
+			margin: 0 0 10px 0;
 		}
 	}
 
 	a {
 		text-decoration: none;
+		line-height: 1rem;
 
 		&:hover, &:visited {
 			color: $color__link;
