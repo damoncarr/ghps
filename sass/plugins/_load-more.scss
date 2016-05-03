@@ -1,0 +1,184 @@
+/*
+ * Ajax Load More
+ * http://wordpress.org/plugins/ajax-load-more/
+ *
+ * Copyright 2016 Connekt Media - https://connekthq.com
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Author: Darren Cooney
+ * Twitter: @KaptonKaos
+*/
+.page-template-newsevents {
+	button.load-more-button{
+	   font-size:16px;
+	   width:100%;
+	   background: lighten($color__blue, 20%);
+	   color:#fff;
+	   border: none;
+	   margin: 10px 0;
+	   padding: 20px;
+	   display: inline-block;		
+	   position: relative;
+	   transition: all 0.25s ease-in-out;
+	   text-align: center;	
+	   text-decoration: none;
+	   box-shadow: none;
+	}
+		button.load-more-button:hover{
+			background-color: lighten($color__blue, 10%);;
+			color: #fff;
+			box-shadow: none;
+		}
+		button.load-more-button:active{
+			box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.1);
+		}	
+		
+		/* Loading */
+	   button.load-more-button.loading{
+	    	// padding-left: 0;
+	   }
+	    
+	   /* Loaded / Done */
+		button.load-more-button.done{
+			display: none;
+	   }  
+	      
+	   /* Loading Icon */
+		button.load-more-button:before,
+		button.load-more-button.done:before{                
+			background: none;
+			width: 0;
+		}
+		
+		/* Loading :before */
+		button.load-more-button.loading:before {
+	      background: none;
+	      width: auto;
+	      height: auto;
+	      margin: 0;
+	      display: inline-block;
+	      z-index: 0;
+	      content: '';
+	      position: absolute;
+	      left: 0;
+	      top: 0;
+	      overflow: hidden;
+	      transition: width 0.5s ease-in-out;
+		}
+		
+	.alm-btn-wrap{
+		text-align: center;
+		padding: 0;
+		overflow: hidden;
+		display: block;
+	}
+
+	// /* Blue */
+	// .ajax-load-more-wrap.blue button.load-more-button{
+	// 	background-color: #0081bf;
+	// }
+	// 	.ajax-load-more-wrap.blue button.load-more-button:hover,
+	// 	.ajax-load-more-wrap.blue button.load-more-button.done{
+	// 		background-color: #0073aa;
+	// 	}
+		
+	
+	/* Infinite */
+	.ajax-load-more-wrap.infinite button.load-more-button {
+	   width: 100%;
+	   background-color: transparent !important; 
+	   -webkit-box-shadow: none !important;
+	   -moz-box-shadow: none !important;
+	   -o-box-shadow: none !important;
+	   -ms-box-shadow: none !important;
+	   box-shadow: none !important;
+	   overflow: hidden;
+	   text-indent: -9999px; 
+	   cursor: default !important;
+	   outline: none !important;
+	}
+	   .ajax-load-more-wrap.infinite button.load-more-button:before {
+	      display: none !important;  
+	   }
+	   .ajax-load-more-wrap.infinite button.load-more-button.done {
+	   	opacity: 0;
+	      filter: alpha(opacity=0); 
+	   }   
+		.ajax-load-more-wrap.infinite button.load-more-button:active{
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+		}	
+		
+	   .ajax-load-more-wrap.infinite button.load-more-button {
+	      background-color: transparent;
+	      background-position: center center;
+	      background-repeat: no-repeat;
+	   	background-image: url("../../core/img/spinner.gif");   	
+	   	border: none !important;
+	   	opacity: 0;
+	      filter: alpha(opacity=0); 
+	   }
+	   .ajax-load-more-wrap.infinite button.load-more-button {      
+	      -webkit-transition: opacity 0.25s ease;
+	      -moz-transition: opacity 0.25s ease;
+	      transition: opacity 0.25s ease;
+	   }
+	   .ajax-load-more-wrap.infinite button.load-more-button.loading {
+	      opacity: 1;
+	      filter: alpha(opacity=100);  
+	   }
+	   .ajax-load-more-wrap.infinite.skype button.load-more-button {
+	   	background-image: url("../../core/img/spinner-skype.gif");   	
+	   }
+	   .ajax-load-more-wrap.infinite.ring button.load-more-button {
+	   	background-image: url("../../core/img/spinner-ring.gif");   	
+	   }
+	   .ajax-load-more-wrap.infinite.fading-blocks button.load-more-button {
+	   	background-image: url("../../core/img/loader-fading-blocks.gif");   	
+	   }
+	   .ajax-load-more-wrap.infinite.fading-circles button.load-more-button {
+	   	background-image: url("../../core/img/loader-fading-circles.gif");   	
+	   }
+	   .ajax-load-more-wrap.infinite.chasing-arrows button.load-more-button {
+	   	background-image: url("../../core/img/spinner-chasing-arrows.gif");   	
+	   }	
+
+
+	/*
+	*  Generic alm-listing styles
+	*  @since 1.0.0
+	*/
+
+	.alm-listing{
+		margin: 0;
+		padding: 0;
+	}
+		.alm-listing li{
+			background: none;
+			margin: 0 0 30px;
+			padding: 0 0 0 170px;
+			overflow: hidden;
+			position: relative;
+			list-style: none;
+		}	
+		.alm-listing li.no-img{ 
+	   	padding: 0; 
+	   }		
+		.alm-listing li a{}
+		.alm-listing li p{
+			margin: 0;
+		}
+		.alm-listing li h3{
+			margin: 0 0 10px;
+		}
+		.alm-listing li img{
+			position: absolute;
+			left: 0;
+			top: 0;			
+			-webkit-border-radius:3px;
+			-moz-border-radius:3px;
+			border-radius:3px;
+		}	
+}
