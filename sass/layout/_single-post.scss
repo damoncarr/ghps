@@ -1,8 +1,8 @@
 .single-post {
 	background: $color__cream;
 	position: relative;
-  width: 100vw;
-  left: calc(-50vw + 50%);
+  // width: 100vw;
+  // left: calc(-50vw + 50%);
   margin-top: 0;
   padding: 0;
 
@@ -14,17 +14,13 @@
     @include clearfix();
 
   }
-  .site-content .inner {
-    width: 100%;
 
-    @include bp-large {
-    	padding: 0 26px 20px 26px !important;
-    	max-width: 1366px;
-    }
+  .hero-image-single .inner {
+    padding: 0;
   }
 
   .post-content {
-    padding: 40px 40px 10px 40px;
+    // padding: 40px 40px 10px 40px;
 
     @include bp-small {
       width: 862 / 1366 * 100%;
@@ -54,9 +50,6 @@
     width: auto;
     left: auto;
 
-    .inner {
-      padding: 40px !important;
-    }
   }
   .posted-on {
     text-transform: uppercase;
