@@ -146,9 +146,10 @@ footer.site-footer {
 	a {
 		text-decoration: none;
 		line-height: 1rem;
+		color: lighten($color__blue, 50%);
 
 		&:hover, &:visited {
-			color: $color__link;
+			color: lighten($color__blue, 50%);
 			text-decoration: underline;
 		}
 	}
