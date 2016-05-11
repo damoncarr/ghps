@@ -1,0 +1,54 @@
+.page-template-contact {
+
+	.site-content {
+		background: $color__blue;
+	}
+
+	.page-title {
+		color: #fff;
+		margin-bottom: 0;
+	}
+	.intro-para {
+		color: #fff;
+		font-size: 1.5rem;
+		font-weight: 300;
+	}
+	.entry-content {
+		margin-top: 0;
+		margin-bottom: -25px;
+		background: #fff;
+
+		h3 {
+			color: $color__red;
+		}
+	}
+
+	.flex {
+		display: block;
+
+		@include bp-medium {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&:after {
+			display: none;
+		}
+	}
+	.col {
+		@include bp-medium {
+			width: 25%
+		}
+
+	}
+
+	.map-container iframe {
+    display: block;
+    width: 100%;
+    position: relative; /* IE needs a position other than static */
+    pointer-events: none;
+	}
+	.map-container iframe.clicked {
+    pointer-events: auto;
+	}
+}

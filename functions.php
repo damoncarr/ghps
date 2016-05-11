@@ -149,6 +149,8 @@ function ghps_scripts() {
 
 	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery.min.js', array(), '20120206', true );
 
+	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js', array(), '20120206', true );	
+
 	wp_enqueue_script( 'ghps-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'ghps-mobnav', get_template_directory_uri() . '/js/jquery.main.js', array(), '20120206', true );
