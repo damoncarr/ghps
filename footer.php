@@ -19,15 +19,22 @@
 			</div>
 			<div class="contact-info">
 				<div class="social-icons">
-					<a href="#"><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/images/facebook-icon.svg">Your browser does not support SVGs</object></a>
-					<a href="#"><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/images/twitter-icon.svg">Your browser does not support SVGs</object></a>
+				<?php if ( get_theme_mod( 'ghps_facebook' ) ) : ?>
+					<a href="<?php echo get_theme_mod( 'ghps_facebook' ); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/facebook-icon.svg"></a>
+				<?php endif; ?>
+				<?php if ( get_theme_mod( 'ghps_twitter' ) ) : ?>
+					<a href="<?php echo get_theme_mod( 'ghps_twitter' ); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/twitter-icon.svg"></a>
+				<?php endif; ?>
 				</div>
 				<h3>Glen Huntly Primary School</h3>
 				<p>Grange Road,<br />
 				Glen Huntly VIC 3163</p>
-				<p class="tel">03&nbsp;9571&nbsp;2931</p>
-				<p><a href="mailto:info@glenhuntlyps.vic.edu.au">info@glenhuntlyps.vic.edu.au</a></p>
+				<?php if ( get_theme_mod( 'ghps_phone_number' ) ) : ?>
+					<p class="tel"><?php echo get_theme_mod( 'ghps_phone_number' ); ?></p>
+				<?php endif; ?>
+				<p><a href="mailto:<?php echo get_theme_mod( 'ghps_email_address' ); ?>"><?php echo get_theme_mod( 'ghps_email_address' ); ?></a></p>
 			</div>
+
 			<div class="policy-links">
 				<div class="inner">
 					<p>Privacy Policy &amp; use of cookies</p>
