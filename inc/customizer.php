@@ -15,6 +15,18 @@ function ghps_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
+	// remove some of the unused standard controls
+	$wp_customize->remove_section( 'colors' );
+	$wp_customize->remove_section( 'background_image' );
+	$wp_customize->remove_section( 'header_image' );
+
+	$wp_customize->remove_setting( 'header_text' );
+	$wp_customize->remove_setting( 'site_icon' );
+
+
+
+
+
 
 	// add a setting for the address
 	$wp_customize->add_setting('ghps_street_address');
