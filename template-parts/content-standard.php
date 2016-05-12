@@ -22,7 +22,9 @@
 			
 		</div>
 	</header><!-- .entry-header -->
-	<?php get_template_part( 'template-parts/content', 'breadcrumbs' ); ?>
+	<div class="inner">
+		<?php get_template_part( 'template-parts/content', 'breadcrumbs' ); ?>
+	</div>
 	<div class="entry-content">
 		<div class="inner">
 			<div class="hero-image-page-large">
