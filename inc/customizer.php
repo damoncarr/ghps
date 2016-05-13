@@ -25,18 +25,6 @@ function ghps_customize_register( $wp_customize ) {
 
 
 
-
-
-
-	// add a setting for the address
-	$wp_customize->add_setting('ghps_street_address');
-	// Add a control for the address
-	$wp_customize->add_control('ghps_street_address', array(
-	 'label'   => 'Street Address',
-	  'section' => 'title_tagline',
-	 'type'    => 'text_area'
-	));
-
 	// add a setting for the phone number
 	$wp_customize->add_setting('ghps_phone_number');
 	// Add a control for the phone number
