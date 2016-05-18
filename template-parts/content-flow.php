@@ -17,6 +17,8 @@
 	</header><!-- .entry-header -->
 	<div class="flow-tiles-container">
 		<div class="inner">
+
+		<?php if (strlen(get_field('flow_tile_1_link')) * strlen(get_field('flow_tile_1_image')) * strlen(get_field('flow_tile_1_label')) >0 ): ?>
 			<div class="flow-tile">
 				<a href="<?php the_field('flow_tile_1_link'); ?>">
 					<?php 
@@ -30,6 +32,9 @@
 				</a>
 				<a href="<?php the_field('flow_tile_1_link'); ?>" class="text-link"><?php the_field('flow_tile_1_label'); ?></a>
 			</div>
+			<?php endif; ?>
+
+			<?php if (strlen(get_field('flow_tile_2_link')) * strlen(get_field('flow_tile_2_image')) * strlen(get_field('flow_tile_2_label')) >0 ): ?>
 			<div class="flow-tile">
 				<a href="<?php the_field('flow_tile_2_link'); ?>">
 					<?php 
@@ -43,6 +48,9 @@
 				</a>
 				<a href="<?php the_field('flow_tile_2_link'); ?>" class="text-link"><?php the_field('flow_tile_2_label'); ?></a>
 			</div>
+			<?php endif; ?>
+
+			<?php if (strlen(get_field('flow_tile_3_link')) * strlen(get_field('flow_tile_3_image')) * strlen(get_field('flow_tile_3_label')) >0 ): ?>
 			<div class="flow-tile">
 				<a href="<?php the_field('flow_tile_3_link'); ?>">
 					<?php 
@@ -56,6 +64,9 @@
 				</a>
 				<a href="<?php the_field('flow_tile_3_link'); ?>" class="text-link"><?php the_field('flow_tile_3_label'); ?></a>
 			</div>
+			<?php endif; ?>
+
+			<?php if (strlen(get_field('flow_tile_4_link')) * strlen(get_field('flow_tile_4_image')) * strlen(get_field('flow_tile_4_label')) >0 ): ?>
 			<div class="flow-tile">
 				<a href="<?php the_field('flow_tile_4_link'); ?>">
 					<?php 
@@ -69,6 +80,9 @@
 				</a>
 				<a href="<?php the_field('flow_tile_4_link'); ?>" class="text-link"><?php the_field('flow_tile_4_label'); ?></a>
 			</div>
+			<?php endif; ?>
+
+			<?php if (strlen(get_field('flow_tile_5_link')) * strlen(get_field('flow_tile_5_image')) * strlen(get_field('flow_tile_5_label')) >0 ): ?>
 			<div class="flow-tile">
 				<a href="<?php the_field('flow_tile_5_link'); ?>">
 					<?php 
@@ -82,6 +96,9 @@
 				</a>
 				<a href="<?php the_field('flow_tile_5_link'); ?>" class="text-link"><?php the_field('flow_tile_5_label'); ?></a>
 			</div>
+			<?php endif; ?>
+
+			<?php if (strlen(get_field('flow_tile_6_link')) * strlen(get_field('flow_tile_6_image')) * strlen(get_field('flow_tile_6_label')) >0 ): ?>
 			<div class="flow-tile">
 				<a href="<?php the_field('flow_tile_6_link'); ?>">
 					<?php 
@@ -95,6 +112,7 @@
 				</a>
 				<a href="<?php the_field('flow_tile_6_link'); ?>" class="text-link"><?php the_field('flow_tile_6_label'); ?></a>
 			</div>
+			<?php endif; ?>
 
 		</div>
 	</div>
