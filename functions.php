@@ -253,7 +253,7 @@ $default_colours = '
 	// "0000FF", "Blue",
 	// "666699", "Grayish blue",
 	// "808080", "Gray",
-	// "FF0000", "Red",
+	"FF0000", "Red",
 	// "FF9900", "Amber",
 	// "99CC00", "Yellow green",
 	// "339966", "Sea green",
