@@ -51,7 +51,7 @@
     font-weight: 300;
     font-size: 1.15rem;
     line-height: 1.25;
-    color: rgba(#fff, 0.8);
+    color: #fff;
     border: none;
     border-bottom: 1px solid rgba(#fff, 0.8);
     background: transparent;
@@ -69,8 +69,8 @@
     }
   }
 
-  placeholder {
-    color: red;
+  ::placeholder {
+    color: #fff;
   }
 
 }
@@ -137,4 +137,46 @@
     text-indent: 101%;
     white-space: nowrap;
     display: block;
+}
+
+
+.page-content .search-form {
+  // background: tomato;
+
+  input {
+    border-color: $color__blue;
+    width: 100%;
+    max-width: 500px;
+    color: $color__blue;
+
+    &:focus {
+      width: 80%;
+      max-width: 500px;
+    }
+  }
+
+  input[type="submit"] {
+    background: $color__blue;
+    color: #fff;
+    box-shadow: none;
+    text-shadow: none;
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+
+    @include bp-small {
+      display: inline-block;
+      width: 18%;
+      max-width: 200px;
+    }
+  }
+
+  ::placeholder {
+    color: lighten($color__blue, 10%);
+  }
+}
+
+// search results 
+.search-results article .entry-header {
+  background: transparent;
 }
