@@ -14,17 +14,17 @@
 			<h3>Contact Us</h3>
 			<div class="phonenumber">
 				<h4>Telephone</h4>
-				<p>03 9571 2931</p>
+				<p><?php echo get_theme_mod( 'ghps_phone_number' ); ?></p>
 			</div>
 			<div class="school-tour">
-				<h4>School tour</h4>
-				<p>Book a personal school tour with our principal Libby Alessi</p>
-				<a href="#">Book a school tour</a>
+				<h4><?php echo get_theme_mod( 'ghps_contactus_col2_heading' ); ?></h4>
+				<p><?php echo get_theme_mod( 'ghps_contactus_col2_text' ); ?></p>
+				<a href="<?php echo get_theme_mod( 'ghps_contactus_col2_link' ); ?>"><?php echo get_theme_mod( 'ghps_contactus_col2_btntxt' ); ?></a>
 			</div>
 			<div class="enquiry">
-				<h4>Send us an enquiry</h4>
-				<p>Need more informaion on the school?</p>
-				<a href="#">Send enquiry</a>
+				<h4><?php echo get_theme_mod( 'ghps_contactus_col3_heading' ); ?></h4>
+				<p><?php echo get_theme_mod( 'ghps_contactus_col3_text' ); ?></p>
+				<a href="<?php echo get_theme_mod( 'ghps_contactus_col3_link' ); ?>"><?php echo get_theme_mod( 'ghps_contactus_col3_btntxt' ); ?></a>
 			</div>
 		</div>
 </header>
