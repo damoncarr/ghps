@@ -2,7 +2,7 @@ input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"],
+// input[type="search"],
 input[type="number"],
 input[type="tel"],
 input[type="range"],
@@ -19,7 +19,7 @@ textarea {
 	border-radius: 3px;
 
 	&:focus {
-		color: $color__text-input-focus;
+		// color: $color__text-input-focus;
 	}
 }
 

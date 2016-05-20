@@ -28,3 +28,13 @@
 		fill: #fff;
 	}
 }
+.wrap-nav {
+
+	@include bp-small {
+		position: relative;
+	}
+
+	@include bp-large {
+		margin-right: 49px;
+	}
+}

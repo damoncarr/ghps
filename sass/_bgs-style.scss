@@ -37,49 +37,49 @@ textarea {
   -webkit-border-radius: 0;
   padding: 0.3em 0.6em;
   width: 100%; }
-  input[type='text']:focus,
-  input[type='tel']:focus,
-  input[type='email']:focus,
-  input[type='search']:focus,
-  input[type='password']:focus,
-  textarea:focus {
-    border-color: #000; }
-  input[type='text']::-webkit-input-placeholder,
-  input[type='tel']::-webkit-input-placeholder,
-  input[type='email']::-webkit-input-placeholder,
-  input[type='search']::-webkit-input-placeholder,
-  input[type='password']::-webkit-input-placeholder,
-  textarea::-webkit-input-placeholder {
-    color: #3f3f3f; }
-  input[type='text']::-moz-placeholder,
-  input[type='tel']::-moz-placeholder,
-  input[type='email']::-moz-placeholder,
-  input[type='search']::-moz-placeholder,
-  input[type='password']::-moz-placeholder,
-  textarea::-moz-placeholder {
-    opacity: 1;
-    color: #3f3f3f; }
-  input[type='text']:-moz-placeholder,
-  input[type='tel']:-moz-placeholder,
-  input[type='email']:-moz-placeholder,
-  input[type='search']:-moz-placeholder,
-  input[type='password']:-moz-placeholder,
-  textarea:-moz-placeholder {
-    color: #3f3f3f; }
-  input[type='text']:-ms-input-placeholder,
-  input[type='tel']:-ms-input-placeholder,
-  input[type='email']:-ms-input-placeholder,
-  input[type='search']:-ms-input-placeholder,
-  input[type='password']:-ms-input-placeholder,
-  textarea:-ms-input-placeholder {
-    color: #3f3f3f; }
-  input[type='text'].placeholder,
-  input[type='tel'].placeholder,
-  input[type='email'].placeholder,
-  input[type='search'].placeholder,
-  input[type='password'].placeholder,
-  textarea.placeholder {
-    color: #3f3f3f; }
+  // input[type='text']:focus,
+  // input[type='tel']:focus,
+  // input[type='email']:focus,
+  // input[type='search']:focus,
+  // input[type='password']:focus,
+  // textarea:focus {
+  //   border-color: #000; }
+  // input[type='text']::-webkit-input-placeholder,
+  // input[type='tel']::-webkit-input-placeholder,
+  // input[type='email']::-webkit-input-placeholder,
+  // // input[type='search']::-webkit-input-placeholder,
+  // input[type='password']::-webkit-input-placeholder,
+  // textarea::-webkit-input-placeholder {
+  //   color: #3f3f3f; }
+  // input[type='text']::-moz-placeholder,
+  // input[type='tel']::-moz-placeholder,
+  // input[type='email']::-moz-placeholder,
+  // input[type='search']::-moz-placeholder,
+  // input[type='password']::-moz-placeholder,
+  // textarea::-moz-placeholder {
+  //   opacity: 1;
+  //   color: #3f3f3f; }
+  // input[type='text']:-moz-placeholder,
+  // input[type='tel']:-moz-placeholder,
+  // input[type='email']:-moz-placeholder,
+  // input[type='search']:-moz-placeholder,
+  // input[type='password']:-moz-placeholder,
+  // textarea:-moz-placeholder {
+  //   color: #3f3f3f; }
+  // input[type='text']:-ms-input-placeholder,
+  // input[type='tel']:-ms-input-placeholder,
+  // input[type='email']:-ms-input-placeholder,
+  // input[type='search']:-ms-input-placeholder,
+  // input[type='password']:-ms-input-placeholder,
+  // textarea:-ms-input-placeholder {
+  //   color: #3f3f3f; }
+  // input[type='text'].placeholder,
+  // input[type='tel'].placeholder,
+  // input[type='email'].placeholder,
+  // input[type='search'].placeholder,
+  // input[type='password'].placeholder,
+  // textarea.placeholder {
+  //   color: #3f3f3f; }
 
 select {
   -webkit-border-radius: 0; }
