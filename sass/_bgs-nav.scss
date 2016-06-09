@@ -960,7 +960,8 @@
     @media (max-width: 767px) {
       .quick-menu a {
         padding: 11px 23px; } }
-  .quick-menu ul {
+.quick-menu {
+  ul {
     position: absolute;
     background: #494f53;
     display: none;
@@ -968,12 +969,16 @@
     z-index: 30;
     width: 195px;
     top: 100%;
-    left: 0; }
-    @media (max-width: 767px) {
-      .quick-menu ul {
-        width: 100%;
-        background: #f0f0f0;
-        display: block; } }
+    left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .quick-menu ul {
+    width: 100%;
+    background: #f0f0f0;
+    display: block;
+  }
+}
     @media (max-width: 767px) {
       .quick-menu ul {
         left: 100%;
