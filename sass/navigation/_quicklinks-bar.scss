@@ -64,6 +64,10 @@
     display: block;
   }
 
+  .quick-menu .sub-menu li a:hover {
+    background: lighten($color__blue, 20%) !important;
+  }
+
 }
       
   @media (min-width: 1320px) {
