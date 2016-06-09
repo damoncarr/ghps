@@ -53,8 +53,8 @@
 		
 	</div><!-- /post-content -->
 	<div class="sidebar">
-			<h3>Share</h3>
-			<h3>Latest News</h3>
+			<?php dynamic_sidebar( 'social_sharing' ); ?>
+			<?php dynamic_sidebar( 'latest_news' ); ?>
 		</div>
 		</div>
 </article><!-- #post-## -->

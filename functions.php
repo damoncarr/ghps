@@ -138,7 +138,25 @@ function ghps_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'          => 'Social Sharing',
+		'id'            => 'social_sharing',
+		'before_widget' => '<div class="social-sharing">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3>',
+		'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+		'name'          => 'Latest News',
+		'id'            => 'latest_news',
+		'before_widget' => '<div class="latest-news">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3>',
+		'after_title'   => '</h3>',
+	) );
+
 }
+
 add_action( 'widgets_init', 'ghps_widgets_init' );
 
 /**
