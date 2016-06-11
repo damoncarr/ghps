@@ -54,7 +54,42 @@
 	</div><!-- /post-content -->
 	<div class="sidebar">
 			<?php dynamic_sidebar( 'social_sharing' ); ?>
-			<?php dynamic_sidebar( 'latest_news' ); ?>
+			<h3>Latest News</h3>
+			<?php
+
+				// WP_Query arguments
+				$args = array (
+					'category_name'          => 'news',
+					'posts_per_page'         => '3',
+					'post__not_in' => array($post->ID)
+				);
+
+				// The Query
+				$the_query = new WP_Query( $args );
+
+				// The Loop
+				if ( $the_query->have_posts() ) { ?>
+					<ul class="list-post">
+					<?php while ( $the_query->have_posts() ) {
+						$the_query->the_post(); 
+						// do something ?>
+						<li class="latest-news-tile">
+							<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+								<?php if ( has_post_thumbnail() ) : ?>
+					        <?php the_post_thumbnail( 'post_masthead_pic_qtr' ); ?>
+								<?php endif; ?>
+								<h4><?php the_title(); ?></h4>
+							</a>
+						</li>
+					<?php }
+				} else {
+					// no posts found
+				}
+
+				// Restore original Post Data
+				wp_reset_postdata();
+
+				?>
 		</div>
 		</div>
 </article><!-- #post-## -->
