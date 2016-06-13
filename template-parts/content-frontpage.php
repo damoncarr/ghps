@@ -27,8 +27,8 @@
 	</header><!-- .entry-header -->
 	<div class="love-school">
 		<div class="inner">
-			<h4>Find out why we love our school</h4>
-			<h5>Secondary Headline</h5>
+			<h4><?php the_field('love_school_headline'); ?></h4>
+			<h5><?php the_field('love_school_secondary_headline'); ?></h5>
 			<div class="love-school-tiles">
 				<div class="tile1">
 					<a href="<?php the_field('tile_1_link'); ?>">
@@ -65,8 +65,8 @@
 	<div class="entry-content">
 		<div class="inner">
 			<div class="whats-new">
-				<h4>What's New</h4>
-				<h5>Secondary Headline</h5>
+				<h4><?php the_field('whats_new_headline'); ?></h4>
+				<h5><?php the_field('whats_new_secondary_headline'); ?></h5>
 			</div>
 			<?php
 				the_content();
