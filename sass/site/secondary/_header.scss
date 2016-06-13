@@ -1,6 +1,6 @@
 .masthead-logo {
-	height: 70px;
-	width: auto;
+	height: auto;
+	width: 76px;
 	float: left;
 	margin: 16px 20px 0 0;
 }
@@ -12,6 +12,18 @@
   float: left;
   padding: 0;
   margin: 0 0 0 75px;
+
+  @include clearfix();
+
+  a {
+    display: inline-block;
+    float: left;
+  }
+
+  img {
+    float: left;
+    margin: 0 13px 0 0;
+  }
 }
   @media (max-width: 1319px) {
     .logo-container {
@@ -30,11 +42,6 @@
         width: 33px;
         height: 52px;
         margin: 0 3px 0 0; } }
-  .logo-container a {
-    display: block; }
-  .logo-container img {
-    float: left;
-    margin: 0 13px 0 0; }
     @media (max-width: 639px) {
       .logo-container img {
         margin: 0 8px 0 0; } }
