@@ -44,12 +44,14 @@
       background: #e4e6e7;
       border-top: 5px solid $color__blue;
       text-align: center;
-      padding: 30px;
+      padding: 40px 30px;
       margin: 0 15px 15px 0;
       font-family: 'gt_walsheimbold';
       display: inline-block;
       width: calc(100% * (1/4) - 10px - 1px);
       flex-grow: 1;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
 
       &:hover {
         background: $color__blue;
