@@ -44,3 +44,36 @@ img {
 .breadcrumbs {
 	font-size: 0.8rem;
 }
+
+//  read more button
+.btn-more {
+	color: #fff;
+	display: inline-block;
+	background: $color__blue;
+	font-family: 'gt_walsheimmedium';
+	padding: 5px 25px;
+	text-decoration: none;
+	-webkit-transition: all ease 300ms;
+	transition: all ease 300ms;
+
+	a {
+		color: #fff;
+		text-decoration: none;
+
+		&:after {
+			content: ">";
+			margin-left: 10px;
+	    color: #fff;
+	    font: 200 1.3rem/1 sans-serif;
+		}
+
+		&:hover, &:active {
+			color: #fff;
+		}
+	}
+
+	&:hover {
+		color: #fff;
+		background: lighten($color__blue, 20%);
+	}
+}
