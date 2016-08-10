@@ -27,6 +27,13 @@
 	.logo {
 		fill: #fff;
 	}
+
+	svg {
+		width: 100%;
+		height: auto;
+	}
+
+	@include clearfix();
 }
 .wrap-nav {
 

@@ -55,9 +55,11 @@
 		<div class="container">
 			<div class="logo-holder">
 				<div class="logo-container">
-					<a href="<?php echo home_url();?>" class="home-link home-link-logo">
-						<object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/images/ghps-logo.svg" class="logo-fill masthead-logo">Your browser does not support SVGs</object>
-					</a>
+					<div class="logo-svg logo-fill masthead-logo">
+						<a href="<?php echo home_url();?>" class="home-link home-link-logo">
+							<?php get_template_part( 'images/inline', 'logo.svg'); ?>
+						</a>
+					</div>
 					<a href="<?php echo home_url();?>" class="home-link home-link-text">
 						<h2 class="site-name"><span class="slogan1"><?php _e("Glen Huntly","ghps")?></span><span class="slogan2"><?php _e("Primary School","ghps")?></span></h2>
 					</a>
@@ -77,9 +79,11 @@
 	<div class="container nav-area">
 		<div class="inner">
 			<div class="logo-in-nav">
-				<a href="<?php echo home_url();?>" class="home-link home-link-logo">
-					<object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/images/ghps-logo.svg" class="logo-fill masthead-logo-in-nav">Your browser does not support SVGs</object>
-				</a>
+				<div class="logo-svg logo-fill masthead-logo-in-nav home-link">
+					<a href="<?php echo home_url();?>" class="home-link home-link-logo">
+						<?php get_template_part( 'images/inline', 'logo.svg'); ?>
+					</a>
+				</div>
 				<div class="home-link home-link-text home-link-desktop">
 					<h2 class="site-name"><span class="slogan1"><?php _e("Glen Huntly","ghps")?></span><span class="slogan2"><?php _e("Primary School","ghps")?></span></h2>
 				</div>
