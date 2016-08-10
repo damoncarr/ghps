@@ -79,7 +79,7 @@
 	<div class="container nav-area">
 		<div class="inner">
 			<div class="logo-in-nav">
-				<div class="logo-svg logo-fill masthead-logo-in-nav">
+				<div class="logo-svg logo-fill masthead-logo-in-nav home-link">
 					<a href="<?php echo home_url();?>" class="home-link home-link-logo">
 						<?php get_template_part( 'images/inline', 'logo.svg'); ?>
 					</a>
