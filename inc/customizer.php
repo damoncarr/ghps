@@ -68,6 +68,14 @@ function ghps_customize_register( $wp_customize ) {
 	    'settings' => 'ghps_twitter',
 	) );
 
+	// Add Instagram Setting
+	$wp_customize->add_setting( 'ghps_instagram' );
+	$wp_customize->add_control( 'ghps_instagram', array(
+	    'label' => __( 'Instagram', 'ghps' ),
+	    'section' => 'ghps_social_media',
+	    'settings' => 'ghps_instagram',
+	) );
+
 	////////////////////////////////////
 	// Add section for "contact footer"
 	$wp_customize->add_section( 'ghps_contact_footer' , array(

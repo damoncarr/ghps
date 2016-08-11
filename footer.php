@@ -25,6 +25,9 @@
 				<?php if ( get_theme_mod( 'ghps_twitter' ) ) : ?>
 					<a href="<?php echo get_theme_mod( 'ghps_twitter' ); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/twitter-icon.svg"></a>
 				<?php endif; ?>
+				<?php if ( get_theme_mod( 'ghps_instagram' ) ) : ?>
+					<a href="<?php echo get_theme_mod( 'ghps_instagram' ); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/instagram-icon.svg"></a>
+				<?php endif; ?>
 				</div>
 				<h3>Glen Huntly Primary School</h3>
 				<p>Grange Road,<br />
