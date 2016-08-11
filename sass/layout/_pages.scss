@@ -70,3 +70,19 @@ body.page-template-default {
 
 
 }
+
+.entry-content table {
+	border-width: 1px;
+	border-style: outset;
+	border-color: gray;
+	border-collapse: collapse;
+	width: auto;
+
+	th, td {
+		border-width: 1px;
+		padding: 8px;
+		border-style: inset;
+		border-color: gray;
+	}
+
+}
