@@ -57,7 +57,7 @@
 				<div class="logo-container">
 					<div class="logo-svg logo-fill masthead-logo">
 						<a href="<?php echo home_url();?>" class="home-link home-link-logo">
-							<?php get_template_part( 'images/inline', 'logo.svg'); ?>
+							<img src="<?php bloginfo('template_directory'); ?>/images/ghps-logo-coloured.svg">
 						</a>
 					</div>
 					<a href="<?php echo home_url();?>" class="home-link home-link-text">
@@ -81,7 +81,7 @@
 			<div class="logo-in-nav">
 				<div class="logo-svg logo-fill masthead-logo-in-nav home-link">
 					<a href="<?php echo home_url();?>" class="home-link home-link-logo">
-						<?php get_template_part( 'images/inline', 'logo.svg'); ?>
+						<img src="<?php bloginfo('template_directory'); ?>/images/ghps-logo-coloured.svg">
 					</a>
 				</div>
 				<div class="home-link home-link-text home-link-desktop">
