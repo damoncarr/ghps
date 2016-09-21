@@ -22,6 +22,7 @@
 
 <?php wp_head(); ?>
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
 </head>
 <?php if( has_nav_menu( 'top_header' ) )
   $walker= new Custom_Walker_Nav_Menu1;

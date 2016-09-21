@@ -65,7 +65,13 @@
 	<div class="entry-content">
 		<div class="inner">
 			<div class="whats-new">
-				<h4><?php the_field('whats_new_headline'); ?></h4>
+				<h4>
+				<?php $value = get_field( "whats_new_headline_link" );
+					if( $value ) { ?>
+						<a href="<?php the_field('whats_new_headline_link'); ?>"><h4><?php the_field('whats_new_headline'); ?></h4></a>
+					<?php } else { ?>
+						<h4><?php the_field('whats_new_headline'); ?></h4>
+					<?php } ?>
 				<h5><?php the_field('whats_new_secondary_headline'); ?></h5>
 			</div>
 			<?php
